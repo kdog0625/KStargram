@@ -1,0 +1,493 @@
+.gbl_main{
+  padding: 70px 0 0 0;
+  width: 100%;
+  position: relative;
+  background-color: ghostwhite;
+
+    &_title{
+    padding: 18px 0 30px 0;
+    // background: #fff;
+    min-height: 133px;
+    border-bottom: 1px #ddd solid;
+    position: relative;
+  
+      &_container{
+        width: 990px;
+        margin: 0 auto 0 auto;
+   
+        &_titles{
+          padding: 25px 0 0 0;
+            position: relative;
+            .tit{
+              font-size: 22px;
+              line-height: 1.5;
+              font-weight: bold;
+              word-break: break-all;
+              word-break: break-word;
+              // i{color:#6A6E71;}
+            .stst{
+              color:#2490d0 ;
+            }
+            }
+        }
+      }
+    }
+    
+}
+.gbl{
+  background-color: rgba(var(--b3f,250,250,250),1);
+
+  &_body{
+    clear: both;
+    width: 990px;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 30px 0;
+   
+    &_contena{
+      position: relative;
+    z-index: 1;
+    margin: 20px auto 20px auto;
+    width: 842px;
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    background-color: white;
+    .btnaa{
+      margin-left: 50px;
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+      
+      .section_main{
+        width: 530px;
+        float: right;
+      }
+    .new_tweet{
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto 0;
+      width: 80%;
+      background-color: #fff;
+      .newfasfield{
+        margin: 0 auto;
+        width: 95%;
+        &_sub{
+          float: left;
+          width: 150px;
+          h2{
+            text-align: center;
+            font-size: 14px;
+
+          }
+        }
+        &_main{
+          margin: 0 25px 20px 0;
+        #tweet_title{
+          position: relative;
+          display: block;
+          top: -4px;
+          width: 75%;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 4px;
+          font-size: 13px;
+          border: 1px #ddd solid;
+          padding: 2px 8px 2px 8px;
+          min-height: 30px;
+          outline: none;
+          height: 10px;
+        }
+      }
+      }
+          .sectionimages{
+            width: 530px;
+            float: right;
+           margin: 0 auto;
+            &-sub{
+              width: 276px;
+              height: 368px;
+              float: left;
+              margin-bottom: 40px;
+            
+              &-box{
+                position: relative;
+                border: 1px #aaa dashed;
+                background: #fff;
+                width: 276px;
+                height: 368px;
+             
+                .icoico{
+                  margin-top: 158px;
+                  display: block;
+                }
+                .icoimage{
+                  margin: 12px 0 0 0;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                color: #ccc;
+                display: block;
+                }
+                .fas.fa-images{
+                  font-size: 80px;
+                  margin: 0 auto;
+                }
+              }
+            }
+            &-main{
+              padding: 154px 0 0 0;
+              width: 224px;
+              position: relative;
+              float: right;
+            
+              &-top{
+              display: none;
+              position: absolute;
+              left: 0;
+              top: 5px;
+              font-size: 13px;
+              color: #FF3B30;
+              }
+            
+              &-photo{
+              position: relative;
+              height: 36px;
+              width: 147px;
+              background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+              overflow: hidden;
+              border: 2px #ddd solid;
+              border-radius: 4px;
+              color: #fff;
+              font-size: 12px;
+              text-align: center;
+              cursor: pointer;
+                .image_form{
+                  font-size: 13px;
+                  padding: 8px 8px 8px 8px;
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  z-index: 2;
+                  font-size: 100px;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+                .textextx{
+                  position: absolute;
+                  bottom: -7px;
+                  left: 0;
+                  width: 147px;
+                  height: 32px;
+                  font-weight: bold;
+                  }
+              }
+              &-photo:hover{
+                background: #D7EEFF;
+              }
+            }
+  
+          }
+        .newtempfield{
+          margin: 0 auto;
+          width: 80%;
+          &_sub{
+            float: left;
+            width: 210px;
+            
+            h2{
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+          &_main{
+            margin: 0 25px 20px 0;
+          #tweet_temp{
+            position: relative;
+            display: block;
+            top: -4px;
+            width: 180px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+            font-size: 13px;
+            border: 1px #ddd solid;
+            padding: 2px 8px 2px 8px;
+            min-height: 30px;
+            outline: none;
+          }
+        }
+        }  
+
+        .newtypestylefield{
+          margin: 0 auto;
+          width: 80%;
+          &_sub{
+            float: left;
+            width: 210px;
+            
+            h2{
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+          &_main{
+            margin: 0 25px 20px 0;
+          #tweet_typestyle{
+            position: relative;
+            display: block;
+            top: -4px;
+            width: 180px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+            font-size: 13px;
+            border: 1px #ddd solid;
+            padding: 2px 8px 2px 8px;
+            min-height: 30px;
+            outline: none;
+          }
+        }
+        }  
+
+
+        .newseasonfield{
+          margin: 0 auto;
+          width: 80%;
+          &_sub{
+            float: left;
+            width: 210px;
+            
+            h2{
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+          &_main{
+            margin: 0 25px 20px 0;
+          #tweet_season{
+            position: relative;
+            display: block;
+            top: -4px;
+            width: 180px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+            font-size: 13px;
+            border: 1px #ddd solid;
+            padding: 2px 8px 2px 8px;
+            min-height: 30px;
+            outline: none;
+          }
+        }
+        }  
+
+        .newsexfield{
+          margin: 0 auto;
+          width: 80%;
+          &_sub{
+            float: left;
+            width: 210px;
+            
+            h2{
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+          &_main{
+            margin: 0 25px 20px 0;
+          #tweet_sex{
+            position: relative;
+            display: block;
+            top: -4px;
+            width: 180px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+            font-size: 13px;
+            border: 1px #ddd solid;
+            padding: 2px 8px 2px 8px;
+            min-height: 30px;
+            outline: none;
+          }
+        }
+        }  
+
+        .newtallfield{
+          margin: 0 auto;
+          width: 80%;
+          &_sub{
+            float: left;
+            width: 210px;
+            
+            h2{
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+          &_main{
+            margin: 0 25px 20px 0;
+          #tweet_tall{
+            position: relative;
+            display: block;
+            top: -4px;
+            width: 180px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+            font-size: 13px;
+            border: 1px #ddd solid;
+            padding: 2px 8px 2px 8px;
+            min-height: 30px;
+            outline: none;
+          }
+        }
+        }  
+        .newtextfield{
+         
+          &_main{
+            margin: 0 25px 20px 0;
+            #tweet_text{
+              position: relative;
+              display: block;
+              top: -4px;
+              width: 70%;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              border-radius: 4px;
+              font-size: 13px;
+              border: 1px #ddd solid;
+              padding: 2px 8px 2px 8px;
+              min-height: 30px;
+              outline: none;
+              height: 180px;
+              margin: 0 auto;
+            }
+          }
+        }
+     
+      select {
+       width: 200px;
+        /* styling */
+        background-color: white;
+        // border: thin solid blue;
+        border-radius: 4px;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0;      
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      select#tweet_temp{
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+      select#tweet_sex {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+      select#tweet_tall {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+      select#tweet_typestyle{
+        background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+      background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+      background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+      background-repeat: no-repeat;
+      }
+      select#tweet_season{
+        background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+      background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+      background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+      background-repeat: no-repeat;
+      }
+     
+      
+      
+    
+      .submit-btn{
+          margin: 0 auto;
+          font-size: 15px;
+          color: #67c5ff;
+          border: solid 2px #67c5ff;
+          border-radius: 3px;
+          transition: .4s;
+          padding: 15px;
+          margin-bottom: 20px;
+        }
+        .submit-btn:hover{
+          // background: #67c5ff;
+          background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+          color: white;
+        }
+    }
+   }
+          
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

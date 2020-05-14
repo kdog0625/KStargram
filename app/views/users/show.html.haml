@@ -1,0 +1,85 @@
+.wrapper
+  .gbl_main
+    .gbl_main_title
+      .gbl_main_title_container
+        .gbl_main_title_container_titles
+          %h1.tit.icon_font
+            %span.ico
+            %i.fa.fa-user
+            %i.stst プロフィール画面
+  .useriine
+    .useriine-lines
+      .useriine-lines-prof 
+        .useriine-lines-prof-sub
+          .useriine-lines-prof-sub-image
+            %p.useriine-lines-prof-sub-image-users
+              = image_tag(@user.image_url)
+          .useriine-lines-prof-sub-profile
+            - if current_user == @user
+              %p.useriine-lines-prof-sub-profile-name
+                = link_to  edit_user_path(current_user.id) do
+                  プロフィール編集
+          -# = render 'follow_form'
+          -# = render 'stats' 
+          
+        .useriine-lines-prof-mains
+          .useriine-lines-prof-mains-top
+            .useriine-lines-prof-mains-top-home
+              %h1.useriine-lines-prof-mains-top-home-user
+                =@user.name
+              %h1.useriine-lines-prof-mains-top-home-id
+                =@user.usernoid
+            .useriine-lines-prof-mains-top-show
+              %ul.useriine-lines-prof-mains-top-show-list
+                %li
+                =@user.tall
+                cm
+                %li
+                =@user.sex
+                %li
+                =@user.age
+                歳
+                
+            -# %ul.useriine-lines-prof-mains-top-metas
+              -# = link_to users_path do
+              -#   %i.fa.fa-users
+            .useriine-lines-prof-mains-top-profiles
+              .useriine-lines-prof-mains-top-profiles-item
+              %p.useriine-lines-prof-mains-top-profiles-main
+                =@user.profile
+              %br
+  .usertotal  
+    .usertotaltweet
+      %h3.usertotaltweet_title 投稿一覧
+      %table
+        %tr
+          %th タイトル
+          %th 気温(℃)
+          %th 日付
+  -#       - @tweets.each do |tweet|
+  -#         %tr
+  -#           %td
+  -#             = link_to tweet.title, tweet_path(tweet.id), class: "content__right__top--title"
+  -#           %td
+  -#             = link_to tweet.temp
+  -#           %td
+  -#             = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+            
+    
+  -#   .usertotallike       
+  -#     %h3.usertotallike_title いいねしている投稿
+  -#     %table
+  -#       %tr
+  -#         %th ユーザID
+  -#         %th ユーザ名
+  -#         %th タイトル
+  -#       - @user.liked_tweets.each do |tweet|
+  -#         %tr
+  -#           %td
+  -#             %a{:href => "/users/#{tweet.user.id}"}= tweet.user.useruserid
+  -#           %td
+  -#             %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+  -#           %td
+  -#             %a{:href => "/tweets/#{tweet.id}"}= tweet.title
+  -# =render "footer"          
+                    

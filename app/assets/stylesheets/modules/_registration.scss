@@ -1,0 +1,140 @@
+.newreg{
+  background-color: #F3EBF6;
+  min-height: 100vh;
+  width: 100%;
+  padding-top:1px;
+  padding-bottom: 1px;
+  background-image: url("back.jpg");
+  background-size:100% 100%;
+  background-position: center;
+  // position: relative;
+  &_str{
+    width: 500px;
+    border-radius: 1.5em;
+    background-color:rgba(255,255,255,0.8);
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    margin: 10em auto;
+    &_sign{
+      text-align: center;
+      padding: 16px;
+      color: black;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: 'Homemade Apple', cursive;
+    }
+      &_main{
+        padding: 20px 20px 64px;
+        h2{
+          font-size: 32px;
+          padding-left: 32px;
+          padding-bottom: 32px;
+          padding-right: 32px;
+          text-align: center;
+          font-family: 'Homemade Apple', cursive;
+        }
+        .new_user{
+          // padding: 40px 40px 64px;
+          .newreg_str_items{
+            max-width: 343px;
+            margin: 0 auto;
+            &_userid{
+              display: block;
+              width: 100%;
+              text-align: center;
+            #user_usernoid{
+              width: 100%;
+                line-height: 48px;
+            }
+          }
+            &_user{
+              display: block;
+              width: 100%;
+              text-align: center;
+              
+              #user_name{
+                width: 100%;
+                line-height: 48px;
+              }
+            }
+            &_mail{
+              display: block;
+              width: 100%;
+              text-align: center;
+              #user_email{
+                width: 100%;
+                line-height: 48px;
+              }
+              .sssssss{
+                color: gray;
+            font-size: 14px;
+              }
+            }
+            &_password{
+              display: block;
+              width: 100%;
+              text-align: center;
+              #user_password{
+                width: 100%;
+                line-height: 48px;
+                margin-top: 10px;
+              }
+            }
+            &_passconf{
+              display: block;
+              width: 100%;
+              text-align: center;
+              #user_password_confirmation{
+                width: 100%;
+                line-height: 48px;
+                margin-top: 10px;
+              }
+              .sssssss{
+                color: gray;
+                font-size: 14px;
+              }
+            }
+            &_button{
+              display: block;
+              width: 100%;
+              text-align: center;
+              margin: 16px 0 0;
+              input{
+                margin: 0 auto;
+                font-size: 15px;
+                color: #67c5ff;
+                border: solid 2px #67c5ff;
+                border-radius: 3px;
+                transition: .4s;
+                width: 100%;
+                margin-bottom: 20px;
+                height: 48px;
+              }
+            }
+
+          }
+        }
+      
+  }
+}
+.new_reg_session{
+  background: #fafafa;
+  margin: 0 auto;
+  height: 48px;
+  display: flex;
+  align-items: center;
+
+.new_session{
+  text-decoration: none;
+  line-height: 40px;
+  // border: solid 1px white;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #75A9FF;
+  text-align: center;
+  // background-color: white;
+}
+}
+
+}

@@ -1,0 +1,64 @@
+.wrapper
+  .gbl_main
+    .gbl_main_title
+      .gbl_main_title_container
+        .gbl_main_title_container_titles
+          %h1.tit.icon_font
+            %span.ico
+            %i.fab.fa-instagram
+            %i.stst コーディネート投稿編集
+  .gbl
+    .gbl_body
+      .gbl_body_contena 
+        %h3.btnaa
+          ファッション画像
+        = form_for @tweet do |form| 
+          .newfasfield
+            .newfasfield_sub
+              %h2 タイトル
+            .newfasfield_main
+              = form.text_field :title, placeholder: "タイトル"
+          .sectionimages
+            .sectionimages-sub
+              .sectionimages-sub-box
+                %span.icoico
+                %span.icoimage
+                  %i.fas.fa-images
+            .sectionimages-main
+              .sectionimages-main-top
+              %p.sectionimages-main-photo
+                = form.file_field :image, class: "image_form"
+                %span.textextx 写真アップロード
+                  
+          .newtempfield
+            .newtempfield_sub
+              %h2 気温
+            .newtempfield_main
+              = form.select :temp, ['-50℃','-40℃','-30℃','-20℃','-10℃','-9℃','-8℃','-7℃','-6℃','-5℃','-4℃','-3℃','-2℃','-1℃','0℃','1℃','2℃','3℃','4℃','5℃','6℃','7℃','8℃','9℃','10℃','11℃','12℃','13℃','14℃','15℃','16℃','17℃','18℃','19℃','20℃','21℃','22℃','23℃','24℃','25℃','26℃','27℃','28℃','29℃','30℃','31℃','32℃','33℃','34℃','35℃','36℃','37℃','38℃','39℃','40℃','41℃','42℃','43℃','44℃','45℃','46℃','47℃','48℃','49℃','50℃','51℃','52℃','53℃','54℃','55℃','56℃', '57℃', '58℃','59℃','60℃','70℃','80℃','90℃','100℃']
+          .newtypestylefield
+            .newtypestylefield_sub
+              %h2 体質
+            .newtypestylefield_main
+              = form.select :typestyle, ['冷え性', '普通', '暑がり']
+          .newseasonfield
+            .newseasonfield_sub
+              %h2 季節
+            .newseasonfield_main
+              = form.select :season, ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+          .newsexfield
+            .newsexfield_sub
+              %h2 性別
+            .newsexfield_main
+              = form.select :sex, ['メンズ', 'レディース', 'ユニセックス','キッズ']
+          .newtallfield
+            .newtallfield_sub
+              %h2 身長
+            .newtallfield_main
+              = form.select :tall,['50cm','60cm','70cm','80cm','90cm','100cm','110cm','120cm','121cm','122cm','123cm','124cm','125cm','126cm','127cm','128cm','129cm','130cm','131cm','132cm','133cm','134cm','135cm','136cm','137cm','138cm','139cm','140cm','141cm','142cm','143cm','144cm','145cm','146cm','147cm','148cm','149cm','150cm','151cm','152cm','153cm','154cm','155cm','156cm','157cm','158cm','159cm','160cm','161cm','162cm','163cm','164cm','165cm','166cm','167cm','168cm','169cm','170cm','171cm','172cm','173cm','174cm','175cm','176cm','177cm','178cm','179cm','180cm','181cm','182cm','183cm','184cm','185cm','186cm','187cm','188cm','189cm','190cm','191cm','192cm','193cm','194cm','195cm','196cm','197cm','198cm','199cm','200cm','210cm','220cm','230cm','240cm','250cm','260cm','270cm']
+          .newtextfield
+            .newtextfield_main
+              = form.text_area :text, placeholder: "コーデ詳細", rows: "10"
+          = form.submit "更新する" , { :class => 'submit-btn' }
+    
+
+

@@ -1,0 +1,284 @@
+.useriine{
+  // padding: 0px 0 80px 0;
+    width: 100%;
+    position: relative;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+
+  &-lines{
+    padding: 18px 0 30px 0;
+    min-height: 260px;
+    position: relative;
+  
+
+    &-prof{
+      max-width: 1020px;
+      margin: 0 auto 0 auto;
+      position: relative;
+      z-index: 50;
+      display: flex;
+      border: 1px #ddd solid;
+      background-color: #fff;
+      &-sub{
+        width: 200px;
+        float: left;
+        margin: 30px 50px 30px 100px;
+        
+        &-image{
+          position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden; 
+          border: 1px #ddd solid; 
+          margin: 0 auto;
+          &-users{
+            font-size: 0;
+            line-height: 1;
+            letter-spacing: 0;
+            width: 100%; 
+            height: 120%; 
+            display: flex; 
+            img{
+              min-width: 100%; 
+              min-height: 100%; 
+              object-fit: cover; 
+              display: block; 
+            }
+         }
+        }
+        &-profile{
+          text-align: center;
+          margin: 10px auto 0 auto;
+          &-name{
+            padding: 5px;
+            position: relative;
+            a{
+              display: block;
+              padding: 8px 0 8px 0;
+              text-align: center;
+              text-decoration: none;
+              color: #888;
+              border: 1px #ddd solid;
+              border-radius: 2px;
+              background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+            }
+          }
+        }
+      }
+      &-mains{
+        width: 700px;
+        float: right;
+        padding: 3px 0 0 0;
+        margin: 30px 0 30px 100px;
+        &-top{
+          display: block;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          &-home{
+            display: flex;
+            &-user{
+              font-size: 30px;
+              line-height: 1.4;
+              color: #333;
+            }
+            &-id{
+              margin-left: 14px;
+              font-size: 15px;
+              line-height: 2.9;
+              color: #888;
+            }
+          }
+          &-show{
+            margin: 1px 0 0 0;
+            &-list{
+              padding: 4px 0 0 0;
+              float: left;
+              font-size: 14px;
+              margin: 0 0 0 8px;
+              position: relative;
+              display: flex;
+              color: #73a9ff;
+              li{
+                margin-right: 30px;
+              }
+            }
+          }
+          &-metas a{
+            margin: 0 30px 0 60px;
+            position: relative;
+            color: #6A6E71;
+            i{
+              font-size: 30px;
+              margin-left: 60px;
+            }
+          }
+          &-profiles{
+            font-size: 15px;
+            margin: 100px 0 0 0;
+            &-item{
+              font-size: 30px;
+            }
+            &-main{
+              height: 100px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.usertotal{
+  display: flex;
+    max-width: 1020px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1em 0;
+  
+.usertotaltweet{
+  width: 500px;
+  margin-bottom: 40px;
+
+  &_title{
+    color: #73a9ff;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: 1px #ddd solid;
+  }
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+      table tr{
+      border: solid 1px #eee;
+      cursor: pointer;
+      }
+       table tr:hover{
+      background-color: #d4f0fd;
+    }
+    table th,table td{
+        text-align: center;
+        width: 25%;
+        padding: 15px 0;
+        border: solid 1px #eee;
+        a{
+          text-decoration: none;
+          color: #73a9ff;
+        }
+      }
+      table td.icon{
+      background-size: 35px;
+      background-position: left 5px center;
+      background-repeat: no-repeat;
+      padding-left: 30px;
+      }
+      table td.icon{
+        background-image: url(icon-bird.png)
+      }     
+  }
+
+  .usertotallike{
+    width: 500px;
+    margin-bottom: 40px;
+  
+  
+    &_title{
+      color: #73a9ff;
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: bold;
+      margin-bottom: 30px;
+      border-bottom: 1px #ddd solid;
+    }
+    table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      background-color: #fff;
+    }
+        table tr{
+        border: solid 1px #eee;
+        cursor: pointer;
+        }
+         table tr:hover{
+        background-color: #d4f0fd;
+      }
+      table th,table td{
+          text-align: center;
+          width: 25%;
+          padding: 15px 0;
+          border: solid 1px #eee;
+          a{
+            text-decoration: none;
+            color: #73a9ff;
+          }
+        }
+        table td.icon{
+        background-size: 35px;
+        background-position: left 5px center;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        }
+        table td.icon{
+          background-image: url(icon-bird.png)
+        }     
+    }
+  }
+  
+  .stats{
+    display: flex;
+    border: solid 1px #eee;
+    margin-top: 20px;
+    a{
+      text-decoration: none;
+      width: 50%;
+    }
+  }
+  .stat{
+    border: solid 1px #eee;
+    background-color: #fff;
+  }
+  #following{
+    float: left;
+    width: 100%;
+  }
+  #followers{
+    float: right;
+    width: 100%;
+  }
+  .gggll{
+    color: #333;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+  }
+  .ggglls{
+    color: #333;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+  }
+  .gggggg{
+    text-align: center;
+      color: black;
+    
+  }
+  .pagination{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+  }
+  

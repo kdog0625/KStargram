@@ -1,0 +1,578 @@
+.useredits{
+  width: 100%;
+  position: relative;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border-bottom: 1px #ddd solid;
+
+  &-line{
+  padding: 18px 0 30px 0;
+  background: #fff;
+  min-height: 210px;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  position: relative;
+
+    &_prof{
+      width: 800px;
+      margin: 0 auto 0 auto;
+      position: relative;
+      z-index: 50;
+   
+        &_main{
+        margin: 22px 0 30px 0;
+        border: 1px #ddd solid;
+        background-color: white;
+          &_user{
+            width: 750px;
+            margin: 0 auto;
+            // float: right;
+            padding: 20px 0 0 20px;
+            &_into{
+              display: block;
+              margin: 0 0 0 0;
+              padding: 0 0 0 0;
+              #edit_user{
+                text-align: center;
+                .edituserid{
+                  // max-width: 343px;
+                  margin: 0 auto;
+                  width: 80%;
+                  &_sub{
+                    float: left;
+                    width: 210px;
+                  h2{
+                    text-align: center;
+                    font-size: 14px;
+                  }
+                }
+                  &_main{
+                    margin: 20px 25px 20px 0;
+    
+                  #user_useruserid{
+                    position: relative;
+                    display: block;
+                    top: -4px;
+                    width: 55%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    border: 1px #ddd solid;
+                    padding: 2px 8px 2px 8px;
+                    min-height: 30px;
+                    outline: none;
+                  }
+                }
+                
+                }
+                .editusername{
+                  margin: 0 auto;
+                  width: 80%;
+                  &_sub{
+                    float: left;
+                    width: 210px;
+                  label{
+                    text-align: center;
+                    font-size: 14px;
+                  }
+                }
+                &_main{
+                  margin: 20px 25px 20px 0;
+                  #user_name{
+                    position: relative;
+                    display: block;
+                    top: -4px;
+                    width: 55%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    border: 1px #ddd solid;
+                    padding: 2px 8px 2px 8px;
+                    min-height: 30px;
+                    outline: none;
+                  }
+                }
+              }
+                .editusermail{
+                  margin: 0 auto;
+                  width: 80%;
+                  &_sub{
+                    float: left;
+                    width: 210px;
+                  label{
+                    text-align: center;
+                    font-size: 14px;
+                  }
+                }
+                  &_main{
+                    margin: 20px 25px 20px 0;
+                  #user_email{
+                    position: relative;
+                    display: block;
+                    top: -4px;
+                    width: 55%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    border: 1px #ddd solid;
+                    padding: 2px 8px 2px 8px;
+                    min-height: 30px;
+                    outline: none;
+                  }
+                }
+              }
+                .edituserform{
+                  margin-top: 40px;
+
+                  &_sub{
+                    margin-bottom: 50px;
+                    display: flex;
+                    &_box{
+                      position: relative;
+                      border: 1px #aaa dashed;
+                      background: #fff;
+                      width: 276px;
+                      height: 368px;
+                      float: left;
+                      margin: 0 auto;
+                      .icoicos{
+                        margin-top: 158px;
+                        display: block;
+                      }
+                      .icoimages{
+                        margin: 12px 0 0 0;
+                      text-align: center;
+                      font-size: 16px;
+                      font-weight: bold;
+                      color: #ccc;
+                      display: block;
+                      }
+                      .fas.fa-portrait{
+                       margin: 0 auto;
+                       font-size: 70px;
+                      }
+                    }
+                    &_image{
+                      padding: 154px 0 0 0;
+                        width: 276px;
+                        height: 368px;
+                        position: relative;
+                        float: right;
+                      &_box{
+                        display: none;
+                          position: absolute;
+                          left: 0;
+                          top: 5px;
+                          font-size: 13px;
+                          color: #FF3B30;
+                        &_pic{
+                          position: relative;
+                          height: 36px;
+                          width: 147px;
+                          background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+                          overflow: hidden;
+                          border: 2px #ddd solid;
+                          border-radius: 4px;
+                          color: #fff;
+                          font-size: 12px;
+                          text-align: center;
+                          cursor: pointer;
+                          .image_form{
+                            font-size: 13px;
+                            padding: 8px 8px 8px 8px;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            z-index: 2;
+                            font-size: 100px;
+                            opacity: 0;
+                            cursor: pointer;  
+                          }
+                          .texpic{
+                            position: absolute;
+                            bottom: -7px;
+                            left: 0;
+                            width: 147px;
+                            height: 32px;
+                            font-weight: bold;
+                          }
+                          
+                        }
+                        &_pic:hover{
+                          background: #D7EEFF;
+                        }
+                      }
+                    }
+                  }
+                  &_tall{
+                    margin: 0 auto;
+                    width: 80%;
+                    &_sub{
+                      float: left;
+                      width: 210px;
+                      h2{
+                        text-align: center;
+                        font-size: 14px;
+                      }
+                    }
+                    &_main{
+                      margin: 20px 25px 20px 0;
+                      #user_tall{
+                        position: relative;
+                        display: block;
+                        top: -4px;
+                        width: 180px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        border: 1px #ddd solid;
+                        padding: 2px 8px 2px 8px;
+                        min-height: 30px;
+                        outline: none;
+                      }
+                    }
+                  }
+                    
+                    &_sex{
+                      margin: 0 auto;
+                      width: 80%;
+                      &_sub{
+                        float: left;
+                        width: 210px;
+                        h2{
+                          text-align: center;
+                          font-size: 14px;
+                        }
+                      }
+                      &_main{
+                        margin: 20px 25px 20px 0;
+                      #user_sex{
+                        position: relative;
+                        display: block;
+                        top: -4px;
+                        width: 180px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        border: 1px #ddd solid;
+                        padding: 2px 8px 2px 8px;
+                        min-height: 30px;
+                        outline: none;
+                      }
+                    }
+                  }
+                    &_age{
+                      margin: 0 auto;
+                      width: 80%;
+                      &_sub{
+                        float: left;
+                        width: 210px;
+                        h2{
+                          text-align: center;
+                          font-size: 14px;
+                        }
+                      }
+                      &_main{
+                        margin: 20px 25px 20px 0;
+                      #user_age{
+                        position: relative;
+                        display: block;
+                        top: -4px;
+                        width: 180px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        border: 1px #ddd solid;
+                        padding: 2px 8px 2px 8px;
+                        min-height: 30px;
+                        outline: none;
+                      }
+                    }
+                  }
+
+                  &_profile{
+                    margin: 0 auto;
+                  
+                    &_main{
+                      margin: 20px 25px 20px 0;
+                    #user_profile{
+                      position: relative;
+                        display: block;
+                        top: -4px;
+                        width: 70%;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        border: 1px #ddd solid;
+                        padding: 2px 8px 2px 8px;
+                        min-height: 30px;
+                        outline: none;
+                        height: 180px;
+                        margin: 0 auto;
+                    }
+                  }
+                }
+                
+                  &_password{
+                    margin: 0 auto;
+                    width: 80%;
+                    &_sub{
+                      float: left;
+                      width: 210px;
+                      label{
+                        text-align: right;
+                        font-size: 14px;
+                      }
+                    }
+                    
+                    &_main{
+                      margin: 20px 25px 20px 0;
+                      #user_password{
+                        position: relative;
+                        display: block;
+                        top: -4px;
+                        width: 210px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        border: 1px #ddd solid;
+                        padding: 2px 8px 2px 8px;
+                        min-height: 30px;
+                        outline: none;
+                      }
+                    }
+                  }
+                    &_passconf{
+                      margin: 0 auto;
+                      width: 80%;
+                      &_sub{
+                        float: left;
+                        width: 210px;
+                        label{
+                          text-align: right;
+                          font-size: 14px;
+                        }
+                      }
+                      &_main{
+                        margin: 20px 25px 20px 0;
+                      #user_password_confirmation{
+                        position: relative;
+                        display: block;
+                        top: -4px;
+                        width: 210px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        border: 1px #ddd solid;
+                        padding: 2px 8px 2px 8px;
+                        min-height: 30px;
+                        outline: none;
+                      }
+                    }
+                  }
+                  
+                  &_passcurent{
+                    margin: 0 auto;
+                    width: 80%;
+                      &_sub{
+                        float: left;
+                        width: 210px;
+                        label{
+                          text-align: right;
+                          font-size: 14px;
+                        }
+                      }
+                      &_main{
+                        margin: 20px 25px 20px 0;
+                    #user_current_password{
+                      position: relative;
+                      display: block;
+                      top: -4px;
+                      width: 210px;
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                      border-radius: 4px;
+                      font-size: 13px;
+                      border: 1px #ddd solid;
+                      padding: 2px 8px 2px 8px;
+                      min-height: 30px;
+                      outline: none;
+                    }
+                  }
+                  }
+                  &_submit{
+                    width: 142px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    &_sub{
+                      margin-bottom: 20px;
+                      .submit-btnaa{
+                        margin: 0 auto;
+                        font-size: 15px;
+                        color: #67c5ff;
+                        border: solid 2px #67c5ff;
+                        border-radius: 3px;
+                        transition: .4s;
+                        padding: 15px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+              &_acount{
+                font-size: 40px;
+                text-align: center;
+              }
+           
+           
+            }
+          }  
+      }
+    }
+  }
+
+.user_subs{
+  width: 200px;
+  float: left;
+  margin: 70px 44px 0 0;
+}
+.usersubimages{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  zoom: 0.7;
+}
+.imageuserss{
+  font-size: 0;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-top: 10px;
+  height: 200px;
+    width: 200px;
+}
+#user_image{
+  margin-top: 120px;
+}
+
+
+
+
+ 
+ 
+
+
+.fufrom{
+  margin-bottom: 20px;
+  width: 100%;
+  #user_froms{
+    width: 30%;
+    
+  }
+  select {
+
+    /* styling */
+    background-color: white;
+    // border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.2em 3.0em 0.2em 1em;
+    margin: 0;      
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  /* arrows */
+  select#user_froms{
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;    
+  }
+}
+
+  // .field{
+  // margin-left: 55px;
+  // margin-bottom: 20px;
+  // }
+
+  select {
+
+    /* styling */
+    background-color: white;
+    // border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.2em 3.0em 0.2em 1em;
+    margin: 0;      
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  /* arrows */
+  select#user_tall{
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;    
+  }
+  select#user_sex {
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  }
+
+
+
+.fieldasaf{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+}

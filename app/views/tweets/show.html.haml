@@ -1,0 +1,86 @@
+.wrapper
+  -# .tweetshowhed
+  -#   =current_user.name
+  .tweetshow
+    .tweetshow_shows 
+      .tweetshow_shows_user
+        = link_to asset_url("/users/#{@tweet.user_id}") do
+          =@tweet.user.name
+        - if user_signed_in?&& current_user.id == @tweet.user_id
+          .tweetshow_shows_user_edit
+            %span
+              %ul
+                %li
+                  = link_to edit_tweet_path do
+                    %i.fas.fa-pen
+                    編集
+                %li
+                  = link_to tweet_path, class: "deletebtn" ,method: :delete do
+                    %i.fas.fa-trash-alt
+                    削除
+        - else
+          .tweetshow_shows_user_edit
+            
+      .tweetTitle
+        =@tweet.title
+      .tweetImage
+        = image_tag(@tweet.image_url) 
+      .tweetText
+        = simple_format @tweet.text
+      .tweettext
+        %i.far.fa-clock
+        = @tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+      .tweettweet 
+      .tweetsex
+        性別:
+        = @tweet.sex
+      .tweettalls
+        身長:
+        = @tweet.tall 
+        cm
+      .tweetseason
+        季節:
+        = @tweet.season
+      .tweettemp
+        目安気温:
+        =@tweet.temp
+        ℃  
+      .tweettypestyle
+        体質:
+        =@tweet.typestyle 
+      
+      -# %h3.liketweet
+      -#   いいね: #{@tweet.likes.count}
+      -#   - if current_user.already_liked?(@tweet)
+      -#     = button_to  tweet_like_path(@tweet) , method: :delete do
+      -#       %i.favo.far.fa-heart
+      -#   - else
+      -#     = button_to tweet_likes_path(@tweet) do
+      -#       %i.favo.far.fa-heart
+      -# .likeusertewwt    
+      -#   -# %h2.liketweetuser いいねしたユーザー
+      -#   - @tweet.liked_users.each do |user|
+      -#     %li.likeusertewwt_user= user.name 
+      -#   .likeusertewwt_iine が「いいね！」しました
+      -# .commentscoment
+      -#   %h4 
+      -#   - if @comments
+      -#     - @comments.each do |comment|
+      -#       %p
+      -#         %strong
+      -#           = link_to comment.user.name, "/users/#{comment.user_id}"
+      -#           ：
+      -#         = comment.text
+
+                
+                
+      -# .commentsusers
+      -#   - if current_user
+      -#     .commentsusers-new
+      -#     = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
+      -#       = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
+      -#       = form.submit "投稿する", class: "comments_sent"
+  
+
+
+

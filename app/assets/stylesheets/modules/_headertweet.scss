@@ -1,0 +1,151 @@
+.header_bars{
+  height: 80px;
+  background-color:rgba(var(--cdc,255,255,255),1);
+  position: fixed;
+  border-bottom: 1px solid gray;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+  // background-image: url(back.jpg);
+  background-image: linear-gradient(#f7faff 0%, #f0fff4 50%, #fffee2 100%);
+  // background-color: #f9f9f9;
+  padding: 1em;
+  &_1{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    &_left{
+      justify-content: flex-start;
+      display: flex;
+    align-items: center;
+      &_logo{
+        font-size: 2em;
+        font-weight: 700;
+        margin-right: 1em;
+        color: #fff;
+        &_main{
+          color: #fff;
+          text-decoration: none;
+          font-size: 50px;
+          font-family: 'Homemade Apple', cursive;
+          color: #45494Be7;
+          font-style: oblique;
+          line-height: 35px;
+        }
+          a{
+            text-decoration: none;
+          }
+        &_search{
+          float: right; 
+          margin-left: 230px;
+          font-size: 30px;
+      
+          &_path{
+            color:#6A6E71;
+            position:relative;
+            margin-bottom:20px;
+            font-size: 30px;
+       
+            &_input{
+              height:50px;
+              padding:0 10px; 
+              position:absolute; 
+              left:0;
+              top:0; 
+              border-radius:2px;
+              outline:0;
+              background:#f9f9f9;	
+              width: 350px;
+              color:#6A6E71;
+              font-weight: normal;
+            }
+            &_btn{
+              height:50px;
+              position:absolute; 
+              left:310px;/*アイコン左右の位置調整*/
+              top:0;
+              background:none;
+              color:#666;
+              border:none;
+              font-size:20px;/*アイコンサイズ*/
+              cursor: pointer;
+              font-family: FontAwesome;
+              z-index: 100;
+            }   
+            
+          }
+        }
+                    
+              li{
+                margin-left: 20px;
+              }
+              a{
+                color:#6A6E71;
+              }
+      }
+  
+    }
+    &_right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 100;
+      &_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 30px;
+        &_item{
+          margin-right: 25px;
+          position: relative;
+            a{
+              color:#6A6E71;
+            }
+            &_icon{
+              cursor: pointer;
+              color: #6A6E71;
+            }
+            &_list{
+              display: none;
+              position: absolute;
+              width: 180px;
+              z-index: 11;
+              border: 1px solid #ddd;
+              border-radius: 3px;
+              background: #fff;
+              right: -10px;
+              padding: 16px;
+              margin-bottom: 0;
+              box-shadow: 0 0.5em 1em rgba(0,0,0,.15);
+              &_edit{
+                padding:0;
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                color: #939393;
+                i{
+                  font-size: 20px;
+                  margin-right: 10px;
+                 
+                }
+                a{
+                  font-size: 20px;
+                  text-decoration: none;
+                 top: 10px;
+                }
+              }
+            }
+        }
+      }   
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,25 @@
+.mainsmainss
+.main_main
+  .main_main_left
+    .main_main_left_tops
+      %h2.main_main_left_tops_time 
+        現在の時刻
+      .lefttop
+        =Time.current.strftime("%Y-%m-%d %H:%M")
+    .leftcontents
+      .leftcontents_top
+        %h2.leftcontents_top_rankname 
+          =link_to root_path
+  .main
+    .main_index
+      - @tweets.each do |tweet|
+        .content{:style => "background-image: url(#{tweet.image});"}
+          = link_to asset_url("/tweets/#{tweet.id}", method: :get) do
+            = image_tag "/tweets/#{tweet.id}", method: :get
+
+          .mainname
+            .mainname_left
+              %h2 
+                =tweet.user.name
+            .mainname_right
+              = tweet.updated_at.strftime("%Y-%m-%d %H:%M")

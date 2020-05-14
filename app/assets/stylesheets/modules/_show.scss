@@ -1,0 +1,191 @@
+ .tweetshow{
+   padding-top: 100px;
+   background-color: rgba(var(--b3f,250,250,250),1);
+   min-height: 100vh;
+   width: 100%;
+   padding-bottom: 50px;
+    &_shows{
+      margin: 50px auto 0;
+      margin-left: 260px;
+      margin-right: 260px;
+      background-color:rgba(var(--cdc,255,255,255),1);
+      background-size: 100% auto;
+    
+      
+      &_user{
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content:space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        a{
+          color: gray;
+          margin-right: 20px;
+          text-decoration: none;
+          font-size: 20px;
+        }
+     
+        &_edit{
+          text-decoration: none;
+          color: #45494Be7;
+          // margin-left: 700px;
+          ul{
+            display: flex;
+            a{
+              color: #518cfc;
+            }
+          }
+        }
+      }
+        .tweetImage{
+          margin: 20px;
+          img{
+          zoom: 0.5;
+          text-align: center;
+          height: 100%;
+          width: 100%;  
+          }
+        }
+        .tweetTitle{
+          margin: 10px 20px;
+          font-size: 2.0rem;
+          font-weight: 700;
+          background: #fff;
+          line-height: 1.2;
+        }
+        
+        .tweetText{
+          text-align: left;
+          margin:30px 30px;
+        }
+        .tweettweet{
+          margin: 0 auto;
+          font-size: 30px;
+          width: 95%;
+          border-top: 1px #e6e7e8 solid;
+        }
+        .tweetsex{
+          opacity: 0.8;
+          font-size:20px;
+          margin: 10px 30px;
+        }
+        .tweettalls{
+          opacity: 0.8;
+          font-size:20px;
+          margin: 10px 30px;
+        }
+        .tweetseason{
+          opacity: 0.8;
+          font-size:20px;
+          margin: 10px 30px;
+        }
+        .tweettemp{
+          opacity: 0.8;
+          font-size:20px;
+          margin: 10px 30px;
+        }
+        
+        .tweettypestyle{
+          opacity: 0.8;
+          font-size:20px;
+          margin: 10px 30px;
+        }
+        .tweettext{
+          margin-left: 75%;
+          opacity: 0.8;
+          margin-top: 10px;
+          font-size: 16px;
+          color: #888;
+        }
+    .likeusertewwt{
+      display: flex;
+    }
+    .liketweet{
+      padding-top:20px;
+      font-size: 20px;
+      display: flex;
+      border-top: 1px #e6e7e8 solid;
+      margin: 10px 30px;
+    
+      .button_to{
+        border: 0;
+        margin-left: 10px;
+        .favo{
+          color: black;
+          font-size: 20px;
+          
+        }
+      }
+    }
+    .likeusertewwt{
+      margin: 10px 30px;
+      font-size: 20px;
+    
+      &_user{
+        list-style: none;
+        margin-right: 10px; 
+        // margin-bottom: 5px;
+        display: inline; 
+      }
+      &_iine{
+        display: flex;
+      }
+    }
+    
+    .commentscoment{
+      margin: 10px 20px;
+      font-size: 20px;
+      
+        strong{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+        a{
+          text-decoration: none;
+          color: #000;
+        }
+        
+      }
+    }
+    .commentsusers{
+      margin: 10px 20px;
+      font-size: 20px;
+        &-new{
+        height: 100%;
+        width: 100%;
+        }
+        #new_comment{
+          display: flex;
+        
+        #comment_text{
+          width: 100%;
+          border: 0;
+        }
+        .comments_sent{
+          margin: 0 auto;
+          font-size: 15px;
+          color: #67c5ff;
+          border: solid 2px #67c5ff;
+          border-radius: 3px;
+          transition: .4s;
+          padding: 15px;
+          
+        }
+        .comments_sent:hover{
+          background: #67c5ff;
+          color: white;
+        }
+        }
+    }
+
+      
+    }
+  } 
+  
+  
+
+
+  
