@@ -1,0 +1,39 @@
+.wrapper
+  = render "header"
+  .gbl_main
+    .gbl_main_title
+      .gbl_main_title_container
+        .gbl_main_title_container_titles
+          %h1.tit.icon_font
+            %span.ico
+            %i.fas.fa-users-cog
+            アカウント編集
+  .useredits
+    .useredits-line
+      .useredits-line_prof
+        .useredits-line_prof_main
+          .useredits-line_prof_main_user
+            .useredits-line_prof_main_user_into
+              %h2.useredits-line_prof_main_user_into_acount
+                = form_for(current_user) do |f|
+                .edituserform_tall
+                    .edituserform_tall_sub
+                      %h2 身長  
+                    .edituserform_tall_main
+                      = f.select :tall,['50cm','60cm','70cm','80cm','90cm','100cm','110cm','120cm','121cm','122cm','123cm','124cm','125cm','126cm','127cm','128cm','129cm','130cm','131cm','132cm','133cm','134cm','135cm','136cm','137cm','138cm','139cm','140cm','141cm','142cm','143cm','144cm','145cm','146cm','147cm','148cm','149cm','150cm','151cm','152cm','153cm','154cm','155cm','156cm','157cm','158cm','159cm','160cm','161cm','162cm','163cm','164cm','165cm','166cm','167cm','168cm','169cm','170cm','171cm','172cm','173cm','174cm','175cm','176cm','177cm','178cm','179cm','180cm','181cm','182cm','183cm','184cm','185cm','186cm','187cm','188cm','189cm','190cm','191cm','192cm','193cm','194cm','195cm','196cm','197cm','198cm','199cm','200cm','210cm','220cm','230cm','240cm','250cm','260cm','270cm']
+                  .edituserform_sex  
+                    .edituserform_sex_sub 
+                      %h2 性別
+                    .edituserform_sex_main
+                      = f.select :sex, ['MEN', 'WOMEN']
+                  .edituserform_age
+                    .edituserform_age_sub
+                      %h2 年齢
+                    .edituserform_age_main
+                      = f.text_field :age, placeholder: "年齢(歳)"
+                  .edituserform_profile
+                    .edituserform_profile_main
+                      = f.text_area :profile, autofocus: true,placeholder: "自己紹介"
+                  .edituserform_submit  
+                    .edituserform_submit_sub
+                      = f.submit "更新", { :class => 'submit-btnaa' }

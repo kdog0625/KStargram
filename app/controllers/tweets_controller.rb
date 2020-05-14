@@ -3,17 +3,9 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all.order(created_at: :desc).page(params[:page]).per(20)
     @tweet=Tweet.new
-    # tweet_like_count = Tweet.joins(:likes).group(:tweet_id).count
-    # tweet_liked_ids = Hash[tweet_like_count.sort_by{ |_, v| -v }].keys
-    # @tweet_ranking= Tweet.where(id: tweet_liked_ids).limit(5)
-  end
-  def new_guest
-    user = User.find_or_create_by!(email: 'guest@example.com') do |user|
-      user.password = SecureRandom.urlsafe_base64
-      # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
-    end
-    sign_in user
-    redirect_to root_path, notice: 'ゲストユーザーとしてログインしました。'
+    tweet_like_count = Tweet.joins(:likes).group(:tweet_id).count
+    tweet_liked_ids = Hash[tweet_like_count.sort_by{ |_, v| -v }].keys
+    @tweet_ranking= Tweet.where(id: tweet_liked_ids).limit(5)
   end
   
   def new
@@ -36,9 +28,9 @@ class TweetsController < ApplicationController
  
   def show
     @tweet = Tweet.find(params[:id]) 
-    # @like = Like.new
-    # @comment = Comment.new
-    # @comments = @tweet.comments.includes(:user)
+    @like = Like.new
+    @comment = Comment.new
+    @comments = @tweet.comments.includes(:user)
   end
   
   def search

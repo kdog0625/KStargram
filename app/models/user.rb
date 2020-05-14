@@ -5,10 +5,12 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
          validates :usernoid, presence: true, uniqueness: true
+         has_many :tweets
+         has_many :likes, dependent: :destroy
+         has_many :liked_tweets, through: :likes, source: :tweet
+         has_many :comments
+        
+         def already_liked?(tweet)
+          self.likes.exists?(tweet_id: tweet.id)
         end
-        def self.guest
-          find_or_create_by!(email: 'guest@example.com') do |user|
-            user.password = SecureRandom.urlsafe_base64
-            # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
-         end
  end

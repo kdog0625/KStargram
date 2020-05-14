@@ -11,7 +11,8 @@ class UsersController < ApplicationController
   end
   def edit
   end
-
+  def profile
+  end
   def update
     if current_user.update(user_params)
       redirect_to root_path
@@ -23,6 +24,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:usernoid, :email,:sex,:image)
+    params.require(:user).permit(:usernoid, :email,:sex,:image,:profile,:age,:tall)
   end
 end

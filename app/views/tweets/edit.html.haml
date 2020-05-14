@@ -1,4 +1,5 @@
 .wrapper
+  =render "header"
   .gbl_main
     .gbl_main_title
       .gbl_main_title_container
@@ -59,6 +60,6 @@
             .newtextfield_main
               = form.text_area :text, placeholder: "コーデ詳細", rows: "10"
           = form.submit "更新する" , { :class => 'submit-btn' }
-    
+  =render "footer"    
 
 

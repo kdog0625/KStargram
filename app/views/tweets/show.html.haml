@@ -1,4 +1,5 @@
 .wrapper
+  = render "header"
   -# .tweetshowhed
   -#   =current_user.name
   .tweetshow
@@ -49,38 +50,37 @@
         体質:
         =@tweet.typestyle 
       
-      -# %h3.liketweet
-      -#   いいね: #{@tweet.likes.count}
-      -#   - if current_user.already_liked?(@tweet)
-      -#     = button_to  tweet_like_path(@tweet) , method: :delete do
-      -#       %i.favo.far.fa-heart
-      -#   - else
-      -#     = button_to tweet_likes_path(@tweet) do
-      -#       %i.favo.far.fa-heart
-      -# .likeusertewwt    
-      -#   -# %h2.liketweetuser いいねしたユーザー
-      -#   - @tweet.liked_users.each do |user|
-      -#     %li.likeusertewwt_user= user.name 
-      -#   .likeusertewwt_iine が「いいね！」しました
-      -# .commentscoment
-      -#   %h4 
-      -#   - if @comments
-      -#     - @comments.each do |comment|
-      -#       %p
-      -#         %strong
-      -#           = link_to comment.user.name, "/users/#{comment.user_id}"
-      -#           ：
-      -#         = comment.text
+      %h3.liketweet
+        いいね: #{@tweet.likes.count}
+        - if current_user.already_liked?(@tweet)
+          = button_to  tweet_like_path(@tweet) , method: :delete do
+            %i.favo.far.fa-heart
+        - else
+          = button_to tweet_likes_path(@tweet) do
+            %i.favo.far.fa-heart
+      .likeusertewwt    
+        -# %h2.liketweetuser いいねしたユーザー
+        - @tweet.liked_users.each do |user|
+          %li.likeusertewwt_user= user.name 
+        .likeusertewwt_iine が「いいね！」しました
+      .commentscoment
+        %h4 
+        - if @comments
+          - @comments.each do |comment|
+            %p
+              %strong
+                = link_to comment.user.name, "/users/#{comment.user_id}"
+                ：
+              = comment.text
 
                 
                 
-      -# .commentsusers
-      -#   - if current_user
-      -#     .commentsusers-new
-      -#     = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
-      -#       = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
-      -#       = form.submit "投稿する", class: "comments_sent"
+      .commentsusers
+        - if current_user
+          .commentsusers-new
+          = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
+            = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
+            = form.submit "投稿する", class: "comments_sent"
   
-
-
+  =render "footer"
 

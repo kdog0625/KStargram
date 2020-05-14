@@ -1,4 +1,5 @@
 .wrapper
+  = render "header"
   .gbl_main
     .gbl_main_title
       .gbl_main_title_container
@@ -13,7 +14,7 @@
         .useriine-lines-prof-sub
           .useriine-lines-prof-sub-image
             %p.useriine-lines-prof-sub-image-users
-              = image_tag(@user.image_url)
+              =@user.image
           .useriine-lines-prof-sub-profile
             - if current_user == @user
               %p.useriine-lines-prof-sub-profile-name
@@ -56,30 +57,30 @@
           %th タイトル
           %th 気温(℃)
           %th 日付
-  -#       - @tweets.each do |tweet|
-  -#         %tr
-  -#           %td
-  -#             = link_to tweet.title, tweet_path(tweet.id), class: "content__right__top--title"
-  -#           %td
-  -#             = link_to tweet.temp
-  -#           %td
-  -#             = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+        -# - @tweets.each do |tweet|
+        -#   %tr
+        -#     %td
+        -#       = link_to tweet.title, tweet_path(tweet.id), class: "content__right__top--title"
+        -#     %td
+        -#       = link_to tweet.temp
+        -#     %td
+        -#       = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
             
     
-  -#   .usertotallike       
-  -#     %h3.usertotallike_title いいねしている投稿
-  -#     %table
-  -#       %tr
-  -#         %th ユーザID
-  -#         %th ユーザ名
-  -#         %th タイトル
-  -#       - @user.liked_tweets.each do |tweet|
-  -#         %tr
-  -#           %td
-  -#             %a{:href => "/users/#{tweet.user.id}"}= tweet.user.useruserid
-  -#           %td
-  -#             %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
-  -#           %td
-  -#             %a{:href => "/tweets/#{tweet.id}"}= tweet.title
+    .usertotallike       
+      %h3.usertotallike_title いいねしている投稿
+      %table
+        %tr
+          %th ユーザID
+          %th ユーザ名
+          %th タイトル
+        - @user.liked_tweets.each do |tweet|
+          %tr
+            %td
+              %a{:href => "/users/#{tweet.user.id}"}= tweet.user.usernoid
+            %td
+              %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+            %td
+              %a{:href => "/tweets/#{tweet.id}"}= tweet.title
   -# =render "footer"          
                     
