@@ -18,7 +18,7 @@
             = link_to new_tweet_path do
               %i.fab.fa-instagram
           %li.header_bars_1_right_list_item
-            = link_to asset_url("/users/#{current_user.id}") do
+            = link_to users_path do
               %i.fa.fa-book-open
             -# %i.fas.fa-heart
           %li.header_bars_1_right_list_item
@@ -40,7 +40,7 @@
                 .ffffsss
                   %i.fa.fa-cog.header-items__icons--cog
                 .skfkfk 
-                  = link_to edit_user_path(current_user.id)  do
+                  = link_to edit_user_registration_path  do
                     設定
     - else
       .header_bars_1_right
@@ -63,10 +63,5 @@
                 .skfkfk 
                   = link_to new_user_session_path do
                     ログイン
-              %li.header_bars_1_right_list_item_list_edit
-                .ffffsss
-                  %i.fas.fa-sign-out-alt
-                .skfkfk 
-                  = link_to users_guest_sign_in_path , method: :post do
-                    ゲストログイン
+              
 

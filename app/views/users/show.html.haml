@@ -14,14 +14,14 @@
         .useriine-lines-prof-sub
           .useriine-lines-prof-sub-image
             %p.useriine-lines-prof-sub-image-users
-              =@user.image
+              = image_tag(@user.image_url)
           .useriine-lines-prof-sub-profile
             - if current_user == @user
               %p.useriine-lines-prof-sub-profile-name
-                = link_to  edit_user_path(current_user.id) do
+                = link_to  edit_user_registration_path do
                   プロフィール編集
-          -# = render 'follow_form'
-          -# = render 'stats' 
+          = render 'follow_form'
+          = render 'stats' 
           
         .useriine-lines-prof-mains
           .useriine-lines-prof-mains-top
@@ -57,14 +57,14 @@
           %th タイトル
           %th 気温(℃)
           %th 日付
-        -# - @tweets.each do |tweet|
-        -#   %tr
-        -#     %td
-        -#       = link_to tweet.title, tweet_path(tweet.id), class: "content__right__top--title"
-        -#     %td
-        -#       = link_to tweet.temp
-        -#     %td
-        -#       = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+        - @tweets.each do |tweet|
+          %tr
+            %td
+              = link_to tweet.title, tweet_path(tweet.id), class: "content__right__top--title"
+            %td
+              = link_to tweet.temp
+            %td
+              = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
             
     
     .usertotallike       
@@ -82,5 +82,5 @@
               %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
             %td
               %a{:href => "/tweets/#{tweet.id}"}= tweet.title
-  -# =render "footer"          
+  =render "footer"          
                     

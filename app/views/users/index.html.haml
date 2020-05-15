@@ -1,0 +1,36 @@
+.wrapper
+  = render "header"
+  .gbl_main
+    .gbl_main_title
+      .gbl_main_title_container
+        .gbl_main_title_container_titles
+          %h1.tit.icon_font
+            %span.ico
+            %i.fa.fa-users
+            %i.stst KStgramユーザー
+            .kskskska
+              = form_with(url: search_users_path, local: true, method: :get, class: "search-formss") do |form|
+                = form.text_field :keyword, placeholder: "ユーザー検索", class: "search-inputss"
+                %button.search-btnss{:type => "submit"}
+                  %i.fa.fa-address-book
+  .gbl_bodyssss
+    .contentaasas
+      %table
+        %tr
+          %th ユーザID
+          %th ユーザ名
+          %th 性別
+          %th 登録日
+        - @users.each do |user|
+          %tr
+            %td 
+              %a{:href => "/users/#{user.id}"}= user.usernoid
+            %td 
+              %a{:href => "/users/#{user.id}"}= user.name
+            %td 
+              =user.sex
+            %td 
+              = user.created_at.strftime("%Y-%m-%d %H:%M")
+  = paginate(@users)
+  =render "footer"
+   

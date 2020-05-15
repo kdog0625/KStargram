@@ -5,25 +5,28 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+  def created
+  end
   def show
     @user = User.find(params[:id])
-    # @tweets=@user.tweets
+    @tweets=@user.tweets
   end
-  def edit
+ 
+
+  def search
+    @user = User.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(20)
   end
-  def profile
-  end
-  def update
-    if current_user.update(user_params)
-      redirect_to root_path
-    else
-      render :edit
-    end
+  def following
+    @user  = User.find(params[:id])
+    @users = @user.followings
+    render 'show_follow'
   end
 
-  private
-
-  def user_params
-    params.require(:user).permit(:usernoid, :email,:sex,:image,:profile,:age,:tall)
+  def followers
+    @user  = User.find(params[:id])
+    @users = @user.followers
+    render 'show_follower'
   end
+
+  
 end

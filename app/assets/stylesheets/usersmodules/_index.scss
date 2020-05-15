@@ -1,0 +1,128 @@
+
+.kskskska{
+  margin-left: 600px;
+  height: 50px;
+// padding: 20px 40px;
+display: flex;
+//  background-color: #d2d2d2;
+
+}
+.search-formss{
+  position:relative;
+  margin-bottom:20px;
+}
+.search-inputss{
+  height:50px;
+  // padding:0 10px; 
+  position:absolute; 
+  left:0;
+  top:0; 
+  border-radius:2px;
+  outline:0;
+  background:#f9f9f9;
+}
+.search-btnss{
+  height:20px;
+  position:absolute; 
+  left:235px;/*アイコン左右の位置調整*/
+  top:0;
+  background:none;
+  // color:#666;
+  border:none;
+  font-size:30px;/*アイコンサイズ*/
+  cursor: pointer;
+  font-family: FontAwesome;
+  i{
+    color:#6A6E71;
+    
+  }
+}
+
+.gbl_bodyssss{
+  height: 100vh;
+    // background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+    .contentaasas{
+  clear: both;
+    width: 990px;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 50px 0;
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  background-color: #fff;
+}
+    table tr{
+    border: solid 1px #eee;
+    cursor: pointer;
+    }
+     table tr:hover{
+    background-color: #d4f0fd;
+  }
+  table th,table td{
+      text-align: center;
+      width: 25%;
+      padding: 15px 0;
+      border: solid 1px #eee;
+      a{
+        text-decoration: none;
+        color: #73a9ff;
+      }
+    }
+    table td.icon{
+    background-size: 35px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    }
+    table td.icon{
+      background-image: url(icon-bird.png)
+    }    
+  }
+
+  .gfffa{
+    position: relative;
+  }
+  .follow-btn{
+    display: block;
+    padding: 8px 20px 8px 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    // font-weight: bold;
+    // border: 1px #d91a3b solid;
+    border-radius: 2px;
+    background-color: #FFD700;	
+    
+  }
+  .follow-btns{
+    display: block;
+    padding: 8px 20px 8px 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    // font-weight: bold;
+    // border: 1px #d91a3b solid;
+    border-radius: 2px;
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    text-align: center;
+  }
+  .submit-btnaa{
+    margin: 0 auto;
+    font-size: 15px;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 26.3%;
+  }
+  .submit-btnaa:hover{
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    color: white;
+  }
+

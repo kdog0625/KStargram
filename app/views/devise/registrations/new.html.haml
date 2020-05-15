@@ -1,35 +1,38 @@
-.newreg
-  .newreg_str
-    -# %h2.newreg_str_sign Kstagram
-    .newreg_str_main
-      %h2 Sign up
-      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-        .newreg_str_items
-          .newreg_str_items_userid
-            = f.text_field :usernoid, autofocus: true , autocomplete:"name",placeholder: "@ユーザID"
-          .newreg_str_items_user
-            %br/
-            = f.text_field :name, autofocus: true , autocomplete:"name",placeholder: "ユーザ名"
-          .newreg_str_items_mail
-            -# = f.label :email
-            %br/
-            = f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "メールアドレス"
-            .sssssss
-              ※「@」「.」などの記入漏れにご注意ください
-          .newreg_str_items_password
-            -# = f.label :password
-            - if @minimum_password_length
-              -# %em
-              -#   (#{@minimum_password_length} characters minimum)
-            -# %br/
-            = f.password_field :password, autocomplete: "new-password",placeholder: "例) 6文字以上の半角英数字"
-          .newreg_str_items_passconf
-            -# = f.label :password_confirmation
-           
-            = f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "再度同じパスワードを入力"
-            .sssssss
-              ※英字と数字の両方を含めて設定してください
-          .newreg_str_items_button
-            = f.submit "Sign up"
-          = render "devise/shared/links"
-        -# = render "devise/shared/error_messages", resource: resource
+.wrapper
+  =render "header"
+  .newreg
+    .newreg_str
+      -# %h2.newreg_str_sign Kstagram
+      .newreg_str_main
+        %h2 Sign up
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          .newreg_str_items
+            .newreg_str_items_userid
+              = f.text_field :usernoid, autofocus: true , autocomplete:"name",placeholder: "@ユーザID"
+            .newreg_str_items_user
+              %br/
+              = f.text_field :name, autofocus: true , autocomplete:"name",placeholder: "ユーザ名"
+            .newreg_str_items_mail
+              -# = f.label :email
+              %br/
+              = f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "メールアドレス"
+              .sssssss
+                ※「@」「.」などの記入漏れにご注意ください
+            .newreg_str_items_password
+              -# = f.label :password
+              - if @minimum_password_length
+                -# %em
+                -#   (#{@minimum_password_length} characters minimum)
+              -# %br/
+              = f.password_field :password, autocomplete: "new-password",placeholder: "例) 6文字以上の半角英数字"
+            .newreg_str_items_passconf
+              -# = f.label :password_confirmation
+            
+              = f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "再度同じパスワードを入力"
+              .sssssss
+                ※英字と数字の両方を含めて設定してください
+            .newreg_str_items_button
+              = f.submit "Sign up"
+            = render "devise/shared/links"
+          -# = render "devise/shared/error_messages", resource: resource
+  =render "footer"

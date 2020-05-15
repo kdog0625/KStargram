@@ -52,12 +52,14 @@
       
       %h3.liketweet
         いいね: #{@tweet.likes.count}
-        - if current_user.already_liked?(@tweet)
-          = button_to  tweet_like_path(@tweet) , method: :delete do
-            %i.favo.far.fa-heart
+        - if user_signed_in?
+          - if current_user.already_liked?(@tweet)
+            = button_to  tweet_like_path(@tweet) , method: :delete do
+              %i.favo.far.fa-heart
+          - else
+            = button_to tweet_likes_path(@tweet) do
+              %i.favo.far.fa-heart
         - else
-          = button_to tweet_likes_path(@tweet) do
-            %i.favo.far.fa-heart
       .likeusertewwt    
         -# %h2.liketweetuser いいねしたユーザー
         - @tweet.liked_users.each do |user|
@@ -81,6 +83,10 @@
           = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
             = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
             = form.submit "投稿する", class: "comments_sent"
-  
+        - else
+          .commentsusers-new
+          = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
+            = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
+            = form.submit "投稿する", class: "comments_sent"
   =render "footer"
 

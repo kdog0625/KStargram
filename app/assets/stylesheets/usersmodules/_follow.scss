@@ -1,0 +1,192 @@
+.followmain{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1em 0;
+  
+  &-side{
+    margin: 0 1.6rem 0 0;
+    flex: 1 1;
+    
+    &-user{
+      position: relative;
+      z-index: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 1em;
+      &-image{
+        text-align: center;
+        margin-bottom: .5em;
+        img{
+          border-radius: 3px;
+          height: 150px;
+          width: 150px;
+        }
+      }
+      &-users{
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1em;
+        padding: 1em 0;
+        text-align: left;
+        &-content{
+          color: #939393;
+          // margin-bottom: 0.1em;
+          font-weight: 700;
+          font-size: 1.5em;
+          a{
+            text-decoration: none;
+            color: black;
+          }
+        }    
+        &-id{
+          color: #939393;
+          margin-bottom: 1em;
+          a{
+            text-decoration: none;
+            color: #73a9ff;
+          }
+        }
+  }
+    }
+    }
+  &-main{
+    flex: 3 1;
+    display: block;
+    &-content{
+      position: relative;
+      z-index: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 1em;
+      &-header{
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1em;
+        padding: 1em 0;
+        h1{
+          font-weight: 700;
+          font-size: 2em;
+        }
+      }
+      &-list{
+        margin-bottom: 1em;
+        
+        
+        &-item{
+          
+          margin-bottom: 1.5em;
+          border-bottom: 1px solid #ddd;
+          &-user{
+            display: flex;
+            
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid #ddd;
+            &-list{
+            display: flex;
+            
+            &-img{
+              margin-right: 1em;
+              img{
+                border-radius: 3px;
+                height: 100px;
+                width: 100px;
+              }
+            }
+            &-name{
+              flex-grow: 1;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              &-prof{
+                &-user{
+                  font-weight: 700;
+                  font-size: 1.5em;
+                  a{
+                    text-decoration: none;
+                    color: black;
+                  }
+                }
+                &-id{
+                  margin-bottom: .5em;
+                  a{
+                    text-decoration: none;
+                    color: #73a9ff;
+                  }
+                }
+              }
+              &-follow{
+                margin-right: 1em;
+                height: 100px;
+                width: 100px;
+              }
+                        
+            }
+          }
+          }
+        }
+      }
+      
+    }
+  }
+  }  
+  // &_main{
+  //   width: 990px;
+  //   margin: 0 auto;
+  //   padding: 1em;
+  //   border: 1px solid gray;
+  //   border-radius: 3px;
+  //   background-color: #fff;
+  //   h2{
+  //     text-align: center;
+      
+  //     font-weight: 700;
+  //   }
+  // }
+  // &_item
+  // table{
+  //   border-collapse: collapse;
+  //   border-spacing: 0;
+  //   width: 100%;
+  //   background-color: #fff;
+  // }
+  // table tr{
+  //   border: solid 1px #eee;
+  //   cursor: pointer;
+  //   }
+  //    table tr:hover{
+  //   background-color: #d4f0fd;
+  // }
+  // table th,table td{
+  //     text-align: center;
+  //     width: 25%;
+  //     padding: 15px 0;
+  //     border: solid 1px #eee;
+  //     a{
+  //       text-decoration: none;
+  //       color: #73a9ff;
+  //     }
+  //   }
+  //   table td.icon{
+  //   background-size: 35px;
+  //   background-position: left 5px center;
+  //   background-repeat: no-repeat;
+  //   padding-left: 30px;
+  //   }
+  //   table td.icon{
+  //     background-image: url(icon-bird.png)
+  //   }    
+  // .ssssss{
+  //   margin: 0 auto;
+  //   width: 1000px;
+  //   img{
+  //     height: 100px;
+  //     width: 100px;
+  //   }
+  // }
+
+
