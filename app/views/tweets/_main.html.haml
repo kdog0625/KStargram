@@ -14,18 +14,34 @@
         .user_rank 
           - @tweet_ranking.length >= 0
           - @tweet_ranking.each.with_index(1) do |tweet, i|
-            .user_rank_ranks
-              第
-              = i
-              位
-            .user_rank_prof
-              = link_to tweet.title, tweet_path(tweet.id)  
-            .user_rank_show
-              .user_rank_show_image
-                %p.user_rank_show_image_names
-                  =image_tag(tweet.image_url)
-              .user_rank_show_name
-                %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+            - if user_signed_in?
+              .user_rank_ranks
+                第
+                = i
+                位
+              .user_rank_prof
+                = link_to tweet.title, tweet_path(tweet.id)  
+              .user_rank_show
+                .user_rank_show_image
+                  %p.user_rank_show_image_names
+                    =image_tag(tweet.image_url)
+                .user_rank_show_name
+                  %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+            - else
+              .user_rank_ranks
+                第
+                = i
+                位
+              .user_rank_prof
+                = link_to tweet.title, tweet_path(tweet.id)  
+              .user_rank_show
+                .user_rank_show_image
+                  %p.user_rank_show_image_names
+                    =image_tag(tweet.image_url)
+                .user_rank_show_name
+                  .user_rank_show_name_logout
+                    = tweet.user.name
+              
     .leftbottom
       .leftbottom_down 
         %h2.tagname 
