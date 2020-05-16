@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
   
   def index
-    @tweets = Tweet.all.order(created_at: :desc).page(params[:page]).per(20)
+    @tweets = Tweet.all.order(created_at: :desc)
     @tweet=Tweet.new
     tweet_like_count = Tweet.joins(:likes).group(:tweet_id).count
     tweet_liked_ids = Hash[tweet_like_count.sort_by{ |_, v| -v }].keys
