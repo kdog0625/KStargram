@@ -3,25 +3,30 @@
   -# .tweetshowhed
   -#   =current_user.name
   .tweetshow
-    .tweetshow_shows 
-      .tweetshow_shows_user
-        = link_to asset_url("/users/#{@tweet.user_id}") do
-          =@tweet.user.name
-        - if user_signed_in?&& current_user.id == @tweet.user_id
-          .tweetshow_shows_user_edit
-            %span
-              %ul
-                %li
-                  = link_to edit_tweet_path do
-                    %i.fas.fa-pen
-                    編集
-                %li
-                  = link_to tweet_path, class: "deletebtn" ,method: :delete do
-                    %i.fas.fa-trash-alt
-                    削除
-        - else
-          .tweetshow_shows_user_edit
-            
+    .tweetshow_shows
+      .tweetshow_shows_list
+      - if user_signed_in?
+        .tweetshow_shows_list_user
+          = link_to asset_url("/users/#{@tweet.user_id}") do
+            =@tweet.user.name
+          - if user_signed_in?&& current_user.id == @tweet.user_id
+            .tweetshow_shows_list_user_edit
+              %span
+                %ul
+                  %li
+                    = link_to edit_tweet_path do
+                      %i.fas.fa-pen
+                      編集
+                  %li
+                    = link_to tweet_path, class: "deletebtn" ,method: :delete do
+                      %i.fas.fa-trash-alt
+                      削除
+          - else
+            .tweetshow_shows_user_edit
+      - else 
+        .tweetshow_shows_list_user
+          .tweetshow_shows_list_user_name
+            =@tweet.user.name 
       .tweetTitle
         =@tweet.title
       .tweetImage
@@ -67,15 +72,22 @@
         .likeusertewwt_iine が「いいね！」しました
       .commentscoment
         %h4 
-        - if @comments
-          - @comments.each do |comment|
-            %p
-              %strong
-                = link_to comment.user.name, "/users/#{comment.user_id}"
-                ：
-              = comment.text
-
-                
+        - if user_signed_in?
+          - if @comments
+            - @comments.each do |comment|
+              %p
+                %strong
+                  = link_to comment.user.name, "/users/#{comment.user_id}"
+                  ：
+                = comment.text
+        - else
+          - if @comments
+            - @comments.each do |comment|
+              %p
+                %strong
+                  = comment.user.name
+                  ：
+                = comment.text      
                 
       .commentsusers
         - if current_user
@@ -84,9 +96,14 @@
             = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
             = form.submit "投稿する", class: "comments_sent"
         - else
-          .commentsusers-new
-          = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
-            = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
-            = form.submit "投稿する", class: "comments_sent"
+          %h4.commentsusers-login ユーザー登録してコメントしてみませんか?
+          .commentsusers-signup
+            = link_to new_user_registration_path do
+              新規登録
+          .commentsusers-submit 
+            既にアカウントを持っている方は
+            = link_to "ログイン",new_user_session_path 
+              
+
   =render "footer"
 

@@ -8,9 +8,11 @@
   // position: relative;
   &_str{
     width: 500px;
-    border-radius: 1.5em;
-    background-color:rgba(255,255,255,0.8);
-    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    border: 1px solid #ddd;
+    // border-radius: 1.5em;
+    // background-color:rgba(255,255,255,0.8);
+    background-color: white;
+    // box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
     margin: 10em auto;
     &_sign{
       text-align: center;
@@ -26,10 +28,12 @@
         h2{
           font-size: 32px;
           padding-left: 32px;
-          padding-bottom: 32px;
+          margin-bottom: 32px;
+          padding-bottom: 20px;
           padding-right: 32px;
           text-align: center;
           font-family: 'Homemade Apple', cursive;
+          border-bottom: 1px solid #ddd;
         }
         .new_user{
           // padding: 40px 40px 64px;
@@ -125,14 +129,11 @@
 .new_session{
   text-decoration: none;
   line-height: 40px;
-  // border: solid 1px white;
-  padding: 0 50px;
   margin: 0 auto;
   font-size: 20px;
   color: #75A9FF;
   text-align: center;
-  // background-color: white;
+}
 }
 }
 
-}
