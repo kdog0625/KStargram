@@ -1,6 +1,6 @@
-# KStagram
+# KStargram
 
-KStagramはファッションコーディネートアプリです。
+KStargramはファッションコーディネートアプリです。
 
 # 主な機能
 ## ユーザー登録
@@ -15,7 +15,7 @@ https://gyazo.com/1d5c68c6f892052383bada739a497d95
 ## いいね機能
 ## ランキング
 
-# KStagram DB設計
+# KStargram DB設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
