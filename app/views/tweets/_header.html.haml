@@ -47,21 +47,12 @@
         %ul.header_bars_1_right_list
           %li.header_bars_1_right_list_item
             = link_to root_path do
-              %i.fas.fa-home
+              %i.fas.fa-home.sssff
           %li.header_bars_1_right_list_item
-            %i.header_bars_1_right_list_item_icon.fa.fa-user
-            %ul.header_bars_1_right_list_item_list
-              %li.header_bars_1_right_list_item_list_edit
-                .ffffsss
-                  %i.fa.fa-user
-                .skfkfk  
-                  = link_to new_user_registration_path do
-                    新規登録
-              %li.header_bars_1_right_list_item_list_edit
-                .ffffsss
-                  %i.fas.fa-sign-out-alt
-                .skfkfk 
-                  = link_to new_user_session_path do
-                    ログイン
+            = link_to new_user_session_path do
+              %i.fas.fa-sign-out-alt.sssff
+          %li.header_bars_1_right_list_item
+            = link_to new_user_registration_path do
+              %i.fas.fa-user-plus.sssff
               
 
