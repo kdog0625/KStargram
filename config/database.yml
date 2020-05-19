@@ -49,6 +49,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode 
   database: KStargram_production
   username: KStargram
   password: <%= ENV['KSTARGRAM_DATABASE_PASSWORD'] %>
