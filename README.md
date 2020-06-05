@@ -5,7 +5,7 @@ KStargramはファッションコーディネートアプリです。
 # 主な機能
 ## ユーザー登録
 
-https://gyazo.com/1d5c68c6f892052383bada739a497d95
+
 
 
 ## 投稿
@@ -20,6 +20,7 @@ https://gyazo.com/1d5c68c6f892052383bada739a497d95
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+|usernoid|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
 |profile|text||
@@ -39,11 +40,12 @@ https://gyazo.com/1d5c68c6f892052383bada739a497d95
 |------|----|-------|
 |title|string|null: false|
 |text|text|null: false|
-|sex|String|null: false|
+|sex|string|null: false|
 |tall|integer|null: false|
+|season|string|null: false|
 |image|text|null: false|
 |temp|integer|null: false|
-|typestyle|String|null: false|
+|typestyle|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user

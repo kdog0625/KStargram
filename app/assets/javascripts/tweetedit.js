@@ -4,7 +4,7 @@ $(function(){
   $('form').on('change', 'input[type="file"]', function(e) {
     var file = e.target.files[0],
         reader = new FileReader(),
-        $subsubimageboxs = $(".edituserform_sub_box");
+        $subsubimageboxs = $(".editmain_right_form_sub");
         t = this;
 
     // 画像ファイル以外の場合は何もしない
@@ -21,7 +21,7 @@ $(function(){
         $subsubimageboxs.append($('<img>').attr({
                   src: e.target.result,
                   width: "150px",
-                  class: "edituserform_sub_box",
+                  class: "editmain_right_form_sub",
                   title: file.name
               }));
       };

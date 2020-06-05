@@ -1,13 +1,13 @@
 .wrapper 
   =render "header"
-  .gbl_main
-    .gbl_main_title
-      .gbl_main_title_container
-        .gbl_main_title_container_titles
-          %h1.tit.icon_font
-            %span.ico
-            %i.fa.fa-users
-            %i.stst フォロワー
+  -# .gbl_main
+  -#   .gbl_main_title
+  -#     .gbl_main_title_container
+  -#       .gbl_main_title_container_titles
+  -#         %h1.tit.icon_font
+  -#           %span.ico
+  -#           %i.fa.fa-users
+  -#           %i.stst フォロワー
   
   .followmain
     %aside.followmain-side
@@ -37,5 +37,5 @@
                       =link_to user.name, user_path(user)
                     .followmain-main-content-list-item-user-list-name-prof-id
                       =link_to user.usernoid, user_path(user)
-                  .followmain-main-content-list-item-user-list-name-follow
+
   =render "footer" 

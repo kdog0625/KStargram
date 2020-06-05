@@ -13,6 +13,7 @@ display: flex;
 }
 .search-inputss{
   height:50px;
+  border: solid 1px #eee;
   // padding:0 10px; 
   position:absolute; 
   left:0;
@@ -92,7 +93,7 @@ table{
     text-decoration: none;
     color: #fff;
     // font-weight: bold;
-    // border: 1px #d91a3b solid;
+    border: solid 1px #eee;
     border-radius: 2px;
     background-color: #FFD700;	
     
@@ -104,7 +105,7 @@ table{
     text-decoration: none;
     color: #fff;
     // font-weight: bold;
-    // border: 1px #d91a3b solid;
+    border: solid 1px #eee;
     border-radius: 2px;
     background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
     text-align: center;

@@ -11,6 +11,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @tweets=@user.tweets
   end
+  def profile
+    @user = User.find(params[:id])
+    @tweets=@user.tweets
+  end
  
 
   def search
