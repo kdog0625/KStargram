@@ -1,15 +1,29 @@
 # KStargram
+![image](https://user-images.githubusercontent.com/60535810/83911138-be757580-a7a6-11ea-8b19-ffd24be8137e.png)
 
 KStargramはファッションコーディネートアプリです。
 
 # 主な機能
 ## ユーザー登録
+![image](https://user-images.githubusercontent.com/60535810/83911458-42c7f880-a7a7-11ea-937b-ba744d524e9e.png)
+
+ユーザID、ユーザ名、メールアドレス、パスワードを入力することでユーザ登録ができます。また、人のアイコンをクリックすると各種設定を行う事ができます。
+
+また、ユーザー登録不要のゲストログインも可能です。ページ上部のヘッダーから簡単にゲストログインできます。 ゲストユーザーは本登録ユーザーと同様の機能が使えます(メールアドレス、ユーザ名変更、退会のみ不可)
+
 
 
 
 
 ## 投稿
+
+![image](https://user-images.githubusercontent.com/60535810/83911812-e6190d80-a7a7-11ea-8bde-17686f033d46.png)
+
+
 ## 閲覧
+
+![image](https://user-images.githubusercontent.com/60535810/83933699-d7514b80-a7e5-11ea-8649-ba3ff2a74f61.png)
+
 ## フォロー
 ## 検索
 ## いいね機能
