@@ -13,17 +13,31 @@ class TweetsController < ApplicationController
   end
   def create
     @tweet = Tweet.create(tweet_params)
+    if @tweet.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
   def destroy
     tweet = Tweet.find(params[:id])
-    tweet.destroy
+    if tweet.destroy 
+      redirect_to root_path
+    else
+      render :show
+    end
   end
   def edit
     @tweet = Tweet.find(params[:id]) 
   end
   def update
     tweet = Tweet.find(params[:id])
-    tweet.update(tweet_params)
+    if tweet.update(tweet_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+    # tweet.update(tweet_params)
   end
  
   def show

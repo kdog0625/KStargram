@@ -141,7 +141,19 @@
               width: 224px;
               position: relative;
               float: right;
-            
+              .field_with_errors{
+                .image_form{
+                  font-size: 13px;
+                  padding: 8px 8px 8px 8px;
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  z-index: 2;
+                  font-size: 100px;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+              }
               &-top{
               display: none;
               position: absolute;
@@ -186,6 +198,7 @@
               &-photo:hover{
                 background: #D7EEFF;
               }
+              
             }
   
           }
@@ -479,8 +492,7 @@
         }
     }
    }
-          
-            
+  
       
       
       
