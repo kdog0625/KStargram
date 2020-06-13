@@ -6,7 +6,7 @@ class User < ApplicationRecord
          mount_uploader :image, ImageUploader
          validates :usernoid, presence: true, uniqueness: true, format: { with: /\A@[\w+\-.]+\z/i }
          validates :name, presence: true
-         validates :email,           presence: true, uniqueness: true, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }
+         validates :email, presence: true, uniqueness: true, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }
          has_many :tweets
          has_many :likes, dependent: :destroy
          has_many :liked_tweets, through: :likes, source: :tweet

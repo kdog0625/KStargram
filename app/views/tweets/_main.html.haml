@@ -1,11 +1,11 @@
 .mainsmainss
 .main_main
   .main_main_left
-    .main_main_left_tops
-      %h2.main_main_left_tops_time 
-        現在の時刻
-      .lefttop
-        =Time.current.strftime("%Y-%m-%d %H:%M")
+    -# .main_main_left_tops
+    -#   %h2.main_main_left_tops_time 
+    -#     現在の時刻
+    -#   .lefttop
+    -#     =Time.current.strftime("%Y-%m-%d %H:%M")
     .leftcontents
       .leftcontents_top
         %h2.leftcontents_top_rankname 
@@ -42,10 +42,10 @@
                   .user_rank_show_name_logout
                     = tweet.user.name
               
-    .leftbottom
-      .leftbottom_down 
-        %h2.tagname 
-          %li.fas.fa-tags オススメタグ
+    -# .leftbottom
+    -#   .leftbottom_down 
+    -#     %h2.tagname 
+    -#       %li.fas.fa-tags オススメタグ
   .main
     .main_index
       - @tweets.each do |tweet|
