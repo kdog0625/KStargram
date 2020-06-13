@@ -1,103 +1,187 @@
-.about{
-  flex: 1 1;
-
-  &_name{
-    margin: 0 auto;
-    padding: 3.2rem;
-    
-  
-    .nametitle{
-      font-size: 60px;
-      color: #45494Be7;
-      font-style: oblique;
-      text-align: center;
-      margin-bottom: 4rem;
-      font-family: 'Homemade Apple', cursive;
-     
-    }
-    &_shousai{
-      font-size: 2rem;
+.aboutmain{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 1em;
+  .aboutlist{
+    flex: 1 1;
+    &-item{
+      margin: 0 auto;
+      padding: 3.2rem;
+      &-header{
+        font-size: 60px;
+        color: #45494Be7;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: 'Homemade Apple', cursive;
+      }
+      &-description{
+        font-size: 2rem;
         max-width: 1200px;
         text-align: center;
+        margin: 0 auto 3em;
+        p{
+          font-size: 20px;
+        }
+      }
+      &-menu{
+        border-top: 3px dashed #C0C0C0;
+        border-left: 3px dashed #C0C0C0;
+        border-right: 3px dashed #C0C0C0;
+        background-color: #fff;
         margin: 0 auto 1em;
-        display: none;
-    }
-    &_shousai1{
-      font-size: 1.5rem;
-      max-width: 1200px;
-      text-align: center;
-      margin: 0 auto 5em;  
-      display: none;
-    }
-
-      .aboutmenu{
-        border: 3px solid #45494Be7;
-        margin: 0 auto 1em;
-        width: 80%;
-
-        &_all{
+        &-list{
           display: flex;
           justify-content: space-between;
           margin: 0 auto;
           padding: 1em;
-      
+          border-bottom: 3px dashed #C0C0C0;
           &-left{
             flex: 1 1;
+            &-icon{
+              color: #6A6E71;
+              text-align: center;
+              font-size: 20px;
+              &-mark{
+                font-size: 6rem;
+                color: #232b33;
+                opacity: 0.9;
+              }
+              &-title{
+                color: #73a9ff;
+                text-align: center;
+              }
+            }
           }
           &-right{
-            flex: 1.5 1;
-            display: flex;
+            flex: 3 1;
+            // display: flex;
             align-items: center;
+            &-description{
+              line-height: 2;
+            }
           }
         }
       }
-  // .aboutslide{
-  //   text-align: center;
-  //   width: 1000px;
-  //   margin: 0 auto;
-  //   color: #5e6f84;
-  //   padding: 60px 0;
-  //   &-list{
-  //     padding: 0;
-  //     .slide {
-  //       display: none;
-        
-  //       .a1{
-  //         width: 1300px;
-  //         margin: 0 auto;
-  //         border-radius: 5px;
-  //         background-image: url("top.png");
-  //         height: 778px;
-  //         zoom:0.5;
-  //       }
-  //       .a2{
-  //         width: 500px;
-  //         margin: 0 auto;
-  //         border-radius: 5px;
-  //         background-image: url("aboutnew.png");
-  //         height: 668px;
-  //         zoom:1;
-  //       }
-  //     }
-      
-  //     .active {
-  //       display: block;
-  //     }
-  //   }
-  // .aboutbtn{
-  //   font-size: 16px;
-  //   margin-top: 20px;
-  //   &_math{
-  //     display: inline-block;
-  //     color: #4e90af;
-  //     background-color: #e0f5ff;
-  //     width: 40px;
-  //     padding: 6px 0;
-  //     margin: 0 5px;
-  //     border-radius: 3px;
-  //     cursor: pointer;
-  //   }
-  // } 
-  // }
+    }
   }
 }
+// .about{
+//   flex: 1 1;
+
+//   &_name{
+//     margin: 0 auto;
+//     padding: 3.2rem;
+    
+  
+//     .nametitle{
+//       font-size: 60px;
+//       color: #45494Be7;
+//       font-style: oblique;
+//       text-align: center;
+//       margin-bottom: 4rem;
+//       font-family: 'Homemade Apple', cursive;
+     
+//     }
+//     &_description{
+//       font-size: 2rem;
+//       max-width: 1200px;
+//       text-align: center;
+//       margin: 0 auto 3em;
+//       p{
+//         font-size: 20px;
+//       }
+//     }
+//     // &_shousai{
+//     //   font-size: 2rem;
+//     //     max-width: 1200px;
+//     //     text-align: center;
+//     //     margin: 0 auto 1em;
+//     //     display: none;
+//     // }
+//     // &_shousai1{
+//     //   font-size: 1.5rem;
+//     //   max-width: 1200px;
+//     //   text-align: center;
+//     //   margin: 0 auto 5em;  
+//     //   display: none;
+//     // }
+//     section{
+//       border: 3px dashed #b83b5e;
+//     margin: 0 auto 1em;
+//     }
+//       .aboutmenu{
+//         border-bottom: 3px dashed #b83b5e;
+//         display: flex;
+//     justify-content: space-between;
+//     margin: 0 auto;
+//     padding: 1em;
+
+//         &_all{
+//           display: flex;
+//           justify-content: space-between;
+//           margin: 0 auto;
+//           padding: 1em;
+      
+//           &-left{
+//             flex: 1 1;
+//           }
+//           &-right{
+//             flex: 1.5 1;
+//             display: flex;
+//             align-items: center;
+//           }
+//         }
+//       }
+//   // .aboutslide{
+//   //   text-align: center;
+//   //   width: 1000px;
+//   //   margin: 0 auto;
+//   //   color: #5e6f84;
+//   //   padding: 60px 0;
+//   //   &-list{
+//   //     padding: 0;
+//   //     .slide {
+//   //       display: none;
+        
+//   //       .a1{
+//   //         width: 1300px;
+//   //         margin: 0 auto;
+//   //         border-radius: 5px;
+//   //         background-image: url("top.png");
+//   //         height: 778px;
+//   //         zoom:0.5;
+//   //       }
+//   //       .a2{
+//   //         width: 500px;
+//   //         margin: 0 auto;
+//   //         border-radius: 5px;
+//   //         background-image: url("aboutnew.png");
+//   //         height: 668px;
+//   //         zoom:1;
+//   //       }
+//   //     }
+      
+//   //     .active {
+//   //       display: block;
+//   //     }
+//   //   }
+//   // .aboutbtn{
+//   //   font-size: 16px;
+//   //   margin-top: 20px;
+//   //   &_math{
+//   //     display: inline-block;
+//   //     color: #4e90af;
+//   //     background-color: #e0f5ff;
+//   //     width: 40px;
+//   //     padding: 6px 0;
+//   //     margin: 0 5px;
+//   //     border-radius: 3px;
+//   //     cursor: pointer;
+//   //   }
+//   // } 
+//   // }
+//   }
+// }
