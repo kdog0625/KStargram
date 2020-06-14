@@ -16,11 +16,13 @@
           =link_to image_tag(@user.image_url)
         .followmain-side-user-users
           %h3.followmain-side-user-users-content
-            = link_to asset_url("/users/#{current_user.id}") do
-              =@user.name
+            =@user.name
+            -# = link_to asset_url("/users/#{current_user.id}") do
+            -#   =@user.name
           %h3.followmain-side-user-users-id
-            = link_to asset_url("/users/#{current_user.id}") do
-              =@user.usernoid
+            =@user.usernoid
+            -# = link_to asset_url("/users/#{current_user.id}") do
+            -#   =@user.usernoid
     %main.followmain-main 
       .followmain-main-content
         .followmain-main-content-header
