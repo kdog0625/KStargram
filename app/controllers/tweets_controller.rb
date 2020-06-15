@@ -11,6 +11,7 @@ class TweetsController < ApplicationController
   def new
     @tweet = Tweet.new
   end
+
   def create
     @tweet = Tweet.create(tweet_params)
     if @tweet.save
@@ -19,6 +20,7 @@ class TweetsController < ApplicationController
       render :new
     end
   end
+
   def destroy
     tweet = Tweet.find(params[:id])
     if tweet.destroy 
@@ -27,9 +29,11 @@ class TweetsController < ApplicationController
       render :show
     end
   end
+
   def edit
     @tweet = Tweet.find(params[:id]) 
   end
+
   def update
     tweet = Tweet.find(params[:id])
     if tweet.update(tweet_params)
@@ -37,7 +41,6 @@ class TweetsController < ApplicationController
     else
       render :edit
     end
-    # tweet.update(tweet_params)
   end
  
   def show
