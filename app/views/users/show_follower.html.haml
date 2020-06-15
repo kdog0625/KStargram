@@ -1,14 +1,5 @@
 .wrapper 
   =render "header"
-  -# .gbl_main
-  -#   .gbl_main_title
-  -#     .gbl_main_title_container
-  -#       .gbl_main_title_container_titles
-  -#         %h1.tit.icon_font
-  -#           %span.ico
-  -#           %i.fa.fa-users
-  -#           %i.stst フォロワー
-  
   .followmain
     %aside.followmain-side
       .followmain-side-user
@@ -17,12 +8,8 @@
         .followmain-side-user-users
           %h3.followmain-side-user-users-content
             =@user.name
-            -# = link_to asset_url("/users/#{current_user.id}") do
-            -#   =@user.name
           %h3.followmain-side-user-users-id
             =@user.usernoid
-            -# = link_to asset_url("/users/#{current_user.id}") do
-            -#   =@user.usernoid
     %main.followmain-main 
       .followmain-main-content
         .followmain-main-content-header
@@ -39,5 +26,4 @@
                       =link_to user.name, user_path(user)
                     .followmain-main-content-list-item-user-list-name-prof-id
                       =link_to user.usernoid, user_path(user)
-
   =render "footer" 

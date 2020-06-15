@@ -1,7 +1,5 @@
 .wrapper
   = render "header"
-  -# .tweetshowhed
-  -#   =current_user.name
   .tweetshow
     .tweetshow_shows
       .tweetshow_shows_list
@@ -66,7 +64,6 @@
               %i.favo.far.fa-heart
         - else
       .likeusertewwt    
-        -# %h2.liketweetuser いいねしたユーザー
         - @tweet.liked_users.each do |user|
           %li.likeusertewwt_user= user.name 
         .likeusertewwt_iine が「いいね！」しました
@@ -87,8 +84,7 @@
                 %strong
                   = comment.user.name
                   ：
-                = comment.text      
-                
+                = comment.text               
       .commentsusers
         - if current_user
           .commentsusers-new
@@ -103,7 +99,5 @@
           .commentsusers-submit 
             既にアカウントを持っている方は
             = link_to "ログイン",new_user_session_path 
-              
-
   =render "footer"
 

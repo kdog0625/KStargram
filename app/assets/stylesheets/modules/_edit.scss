@@ -17,21 +17,21 @@
     }
     &_main{
       margin: 0 25px 20px 0;
-    #tweet_title{
-      position: relative;
-      display: block;
-      top: -4px;
-      width: 75%;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 4px;
-      font-size: 13px;
-      border: 1px #ddd solid;
-      padding: 2px 8px 2px 8px;
-      min-height: 30px;
-      outline: none;
+      #tweet_title{
+        position: relative;
+        display: block;
+        top: -4px;
+        width: 75%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+        font-size: 13px;
+        border: 1px #ddd solid;
+        padding: 2px 8px 2px 8px;
+        min-height: 30px;
+        outline: none;
+      }
     }
-  }
   }
   .sectionimages{
     width: 530px;
@@ -47,25 +47,23 @@
         border: 1px #aaa dashed;
         background: #fff;
         width: 276px;
-        height: 368px;
-       
-      
+        height: 368px; 
         .icoico{
           margin-top: 158px;
           display: block;
         }
         .icoimage{
           margin: 12px 0 0 0;
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        color: #ccc;
-        display: block;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: #ccc;
+          display: block;
         }
-        .fas.fa-images{
-          font-size: 80px;
-          margin: 0 auto;
-        }
+          .fas.fa-images{
+            font-size: 80px;
+            margin: 0 auto;
+          }
       }
     }
     &-main{
@@ -73,28 +71,26 @@
       width: 224px;
       position: relative;
       float: right;
-    
       &-top{
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 5px;
-      font-size: 13px;
-      color: #FF3B30;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        font-size: 13px;
+        color: #FF3B30;
       }
-    
       &-photo{
-      position: relative;
-      height: 36px;
-      width: 147px;
-      background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
-      overflow: hidden;
-      border: 2px #ddd solid;
-      border-radius: 4px;
-      color: #fff;
-      font-size: 12px;
-      text-align: center;
-      cursor: pointer;
+        position: relative;
+        height: 36px;
+        width: 147px;
+        background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+        overflow: hidden;
+        border: 2px #ddd solid;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
         .image_form{
           font-size: 13px;
           padding: 8px 8px 8px 8px;
@@ -115,19 +111,17 @@
           font-weight: bold;
           }
       }
-      &-photo:hover{
-        background: #D7EEFF;
-      }
+        &-photo:hover{
+          background: #D7EEFF;
+        }
     }
-
   }
   .newtempfield{
     margin: 0 auto;
     width: 80%;
     &_sub{
       float: left;
-      width: 210px;
-      
+      width: 210px; 
       h2{
         text-align: center;
         font-size: 14px;
@@ -135,30 +129,28 @@
     }
     &_main{
       margin: 0 25px 20px 0;
-    #tweet_temp{
-      position: relative;
-      display: block;
-      top: -4px;
-      width: 180px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 4px;
-      font-size: 13px;
-      border: 1px #ddd solid;
-      padding: 2px 8px 2px 8px;
-      min-height: 30px;
-      outline: none;
+      #tweet_temp{
+        position: relative;
+        display: block;
+        top: -4px;
+        width: 180px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+        font-size: 13px;
+        border: 1px #ddd solid;
+        padding: 2px 8px 2px 8px;
+        min-height: 30px;
+        outline: none;
+      }
     }
-  }
   }  
-
   .newtypestylefield{
     margin: 0 auto;
     width: 80%;
     &_sub{
       float: left;
       width: 210px;
-      
       h2{
         text-align: center;
         font-size: 14px;
@@ -166,24 +158,22 @@
     }
     &_main{
       margin: 0 25px 20px 0;
-    #tweet_typestyle{
-      position: relative;
-      display: block;
-      top: -4px;
-      width: 180px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 4px;
-      font-size: 13px;
-      border: 1px #ddd solid;
-      padding: 2px 8px 2px 8px;
-      min-height: 30px;
-      outline: none;
+      #tweet_typestyle{
+        position: relative;
+        display: block;
+        top: -4px;
+        width: 180px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+        font-size: 13px;
+        border: 1px #ddd solid;
+        padding: 2px 8px 2px 8px;
+        min-height: 30px;
+        outline: none;
+      }
     }
-  }
   }  
-
-
   .newseasonfield{
     margin: 0 auto;
     width: 80%;
@@ -301,9 +291,7 @@
 
 select {
 width: 200px;
-/* styling */
 background-color: white;
-// border: thin solid blue;
 border-radius: 4px;
 display: inline-block;
 font: inherit;
@@ -405,7 +393,6 @@ background-repeat: no-repeat;
   margin-bottom: 20px;
 }
 .submit-btn:hover{
-  // background: #67c5ff;
   background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
   color: white;
 }

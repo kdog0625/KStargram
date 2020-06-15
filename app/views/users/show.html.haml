@@ -40,10 +40,6 @@
                 %li
                 =@user.age
                 歳
-                
-            -# %ul.useriine-lines-prof-mains-top-metas
-              -# = link_to users_path do
-              -#   %i.fa.fa-users
             .useriine-lines-prof-mains-top-profiles
               .useriine-lines-prof-mains-top-profiles-item
               %p.useriine-lines-prof-mains-top-profiles-main
@@ -65,22 +61,5 @@
               = link_to tweet.temp
             %td
               = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
-            
-    
-    -# .usertotallike       
-    -#   %h3.usertotallike_title いいねしている投稿
-    -#   %table
-    -#     %tr
-    -#       %th ユーザID
-    -#       %th ユーザ名
-    -#       %th タイトル
-    -#     - @user.liked_tweets.each do |tweet|
-    -#       %tr
-    -#         %td
-    -#           %a{:href => "/users/#{tweet.user.id}"}= tweet.user.usernoid
-    -#         %td
-    -#           %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
-    -#         %td
-    -#           %a{:href => "/tweets/#{tweet.id}"}= tweet.title
   =render "footer"          
                     

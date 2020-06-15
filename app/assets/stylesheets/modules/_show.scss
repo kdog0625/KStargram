@@ -11,7 +11,6 @@
       background-color:rgba(var(--cdc,255,255,255),1);
       background-size: 100% auto;
     &_list{
-      
       &_user{
         display: flex;
         margin: 20px;
@@ -35,7 +34,6 @@
         &_edit{
           text-decoration: none;
           color: #45494Be7;
-          // margin-left: 700px;
           ul{
             display: flex;
             a{
@@ -61,7 +59,6 @@
           background: #fff;
           line-height: 1.2;
         }
-        
         .tweetText{
           text-align: left;
           margin:30px 30px;
@@ -132,7 +129,6 @@
       &_user{
         list-style: none;
         margin-right: 10px; 
-        // margin-bottom: 5px;
         display: inline; 
       }
       &_iine{
@@ -143,7 +139,6 @@
     .commentscoment{
       margin: 10px 20px;
       font-size: 20px;
-      
         strong{
         margin-left: 10px;
         margin-right: 10px;
@@ -178,8 +173,7 @@
           border: solid 2px #67c5ff;
           border-radius: 3px;
           transition: .4s;
-          padding: 15px;
-          
+          padding: 15px;     
         }
         .comments_sent:hover{
           background: #67c5ff;
@@ -226,8 +220,8 @@
           }
         }
     } 
-    }
-  } 
+  }
+} 
   
   
 

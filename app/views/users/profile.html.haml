@@ -1,13 +1,5 @@
 .wrapper
   = render "header"
-  -# .gbl_main
-  -#   .gbl_main_title
-  -#     .gbl_main_title_container
-  -#       .gbl_main_title_container_titles
-  -#         %h1.tit.icon_font
-  -#           %span.ico
-  -#           %i.fa.fa-user
-  -#           %i.stst プロフィール画面
   .profiletop
     %aside.profiletop-side
       .profiletop-side-user
@@ -42,32 +34,5 @@
                       .profiletop-main-content-list-item-user-footer-id-like-count
                         %i.favo.far.fa-heart
                         =tweet.likes.count
-                
-              
-        -#   %ul.profiletop-main-content-list
-        -#     %li.profiletop-main-content-list-item
-        -#       .profiletop-main-content-list-item-user-list
-        -#         .profiletop-main-content-list
-        -#           %a{:href => "/tweets/#{tweet.id}"}= image_tag(tweet.image_url)
-                  -# %a{:href => "/users/#{tweet.user.id}"}= tweet.user.usernoid
-                  -# %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
-                  -# %a{:href => "/tweets/#{tweet.id}"}= tweet.title
-    -# .usertotallike
-    -#   %h3.usertotallike_title いいねしている投稿
-    -#   %table
-    -#     %tr
-    -#       %th ユーザID
-    -#       %th ユーザ名
-    -#       %th タイトル
-    -#     - @user.liked_tweets.each do |tweet|
-    -#       %tr
-    -#         %td
-    -#           %a{:href => "/users/#{tweet.user.id}"}= tweet.user.usernoid
-    -#         %td
-    -#           %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
-    -#         %td
-    -#           %a{:href => "/tweets/#{tweet.id}"}= tweet.title
-    -#         %td
-    -#           %a{:href => "/tweets/#{tweet.id}"}= tweet.image
   =render "footer"          
                     

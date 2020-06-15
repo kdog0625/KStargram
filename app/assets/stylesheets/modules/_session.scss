@@ -80,23 +80,22 @@
   }
 
 
-.new_session_reg{
-  background: #fafafa;
-  margin: 0 auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
+  .new_session_reg{
+    background: #fafafa;
+    margin: 0 auto;
+    height: 48px;
+    display: flex;
+    align-items: center;
 
-.new_registration{
-  text-decoration: none;
-  line-height: 40px;
-  // border: solid 1px white;
-  padding: 0 50px;
-  margin: 0 auto;
-  font-size: 20px;
-  color: #75A9FF;
-  text-align: center;
-}
-}
+    .new_registration{
+      text-decoration: none;
+      line-height: 40px;
+      padding: 0 50px;
+      margin: 0 auto;
+      font-size: 20px;
+      color: #75A9FF;
+      text-align: center;
+    }
+  }
 }
 
