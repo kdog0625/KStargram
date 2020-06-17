@@ -1,19 +1,29 @@
-.kiyaku{
+@mixin name {
   display: flex;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   padding-top: 120px;
   padding-bottom: 60px;
+}
+
+@mixin content{
+  position: relative;
+  z-index: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1em;
+  width: 100%;
+}
+
+.kiyaku{
+  @include name;
   &_show{
     flex: 1 1;
     &_content{
-      position: relative;
-      z-index: 0;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 1em;
+      @include content;
         h1{
           font-size: 3em;
         }
@@ -24,4 +34,18 @@
   }
 }
 
-
+.privacy{
+  @include name;
+  &_show{
+    flex: 1 1;
+    &_content{
+      @include content;
+        h1{
+          font-size: 3em;
+        }
+        h2{
+          font-size: 2em;
+        }
+    }
+  }
+}
