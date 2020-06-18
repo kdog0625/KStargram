@@ -42,6 +42,42 @@
   font-style: oblique;
   line-height: 35px;
 }
+
+@mixin headerpath {
+  color:#6A6E71;
+  position:relative;
+  margin-bottom:20px;
+  font-size: 30px;
+}
+
+@mixin headerinput{
+  height:50px;
+  padding:0 10px; 
+  position:absolute; 
+  left:0;
+  top:0; 
+  border-radius:2px;
+  outline:0;
+  background:#f9f9f9;	
+  width: 350px;
+  color:#6A6E71;
+  font-weight: normal;
+  border: 1px solid #ddd;
+}
+
+@mixin headerbtn{
+  height:50px;
+  position:absolute; 
+  left:310px;
+  top:0;
+  background:none;
+  color:#666;
+  border:none;
+  font-size:20px;
+  cursor: pointer;
+  font-family: FontAwesome;
+  z-index: 100;
+}
 /* PC用デザイン */
 @media screen and (min-width: 481px) {
 .header_bars{
@@ -60,36 +96,12 @@
           margin-left: 90px;
           font-size: 30px;
           &_path{
-            color:#6A6E71;
-            position:relative;
-            margin-bottom:20px;
-            font-size: 30px;
+            @include headerpath;
             &_input{
-              height:50px;
-              padding:0 10px; 
-              position:absolute; 
-              left:0;
-              top:0; 
-              border-radius:2px;
-              outline:0;
-              background:#f9f9f9;	
-              width: 350px;
-              color:#6A6E71;
-              font-weight: normal;
-              border: 1px solid #ddd;
+              @include headerinput;
             }
             &_btn{
-              height:50px;
-              position:absolute; 
-              left:310px;
-              top:0;
-              background:none;
-              color:#666;
-              border:none;
-              font-size:20px;
-              cursor: pointer;
-              font-family: FontAwesome;
-              z-index: 100;
+              @include headerbtn;
             }   
           }
         }         
@@ -199,36 +211,12 @@
             margin-left: 70px;
             font-size: 30px;
             &_path{
-              color:#6A6E71;
-              position:relative;
-              margin-bottom:20px;
-              font-size: 30px;
+              @include headerpath;
               &_input{
-                height:50px;
-                padding:0 10px; 
-                position:absolute; 
-                left:0;
-                top:0; 
-                border-radius:2px;
-                outline:0;
-                background:#f9f9f9;	
-                width: 350px;
-                color:#6A6E71;
-                font-weight: normal;
-                border: 1px solid #ddd;
+                @include headerinput;
               }
               &_btn{
-                height:50px;
-                position:absolute; 
-                left:310px;
-                top:0;
-                background:none;
-                color:#666;
-                border:none;
-                font-size:20px;
-                cursor: pointer;
-                font-family: FontAwesome;
-                z-index: 100;
+                @include headerbtn;
               }   
             }
           }         
