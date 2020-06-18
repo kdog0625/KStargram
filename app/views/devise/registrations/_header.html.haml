@@ -50,13 +50,13 @@
     - else
       .header_bars_1_right
         %ul.header_bars_1_right_lists
-          %li.header_bars_1_right_list_item
+          %li
             = link_to  users_guest_sign_in_path, method: :post, class: "guest__btn" do
               ゲスト
-          %li.header_bars_1_right_lists_items
+          %li
             = link_to new_user_session_path do
               ログイン
-          %li.header_bars_1_right_lists_items
+          %li
             = link_to new_user_registration_path do
               新規登録
               
