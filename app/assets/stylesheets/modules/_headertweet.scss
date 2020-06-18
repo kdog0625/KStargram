@@ -78,6 +78,28 @@
   font-family: FontAwesome;
   z-index: 100;
 }
+
+@mixin headerright{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+}
+
+@mixin headerlist{
+  display: none;
+  position: absolute;
+  width: 180px;
+  z-index: 11;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  right: -10px;
+  padding: 16px;
+  margin-bottom: 0;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,.15);
+}
+
 /* PC用デザイン */
 @media screen and (min-width: 481px) {
 .header_bars{
@@ -115,10 +137,7 @@
 
     }
     &_right{
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      z-index: 100;
+      @include headerright;
       &_list{
         display: flex;
         justify-content: space-between;
@@ -138,17 +157,7 @@
               color: #6A6E71;
             }
             &_list{
-              display: none;
-              position: absolute;
-              width: 180px;
-              z-index: 11;
-              border: 1px solid #ddd;
-              border-radius: 3px;
-              background: #fff;
-              right: -10px;
-              padding: 16px;
-              margin-bottom: 0;
-              box-shadow: 0 0.5em 1em rgba(0,0,0,.15);
+              @include headerlist;
               &_edit{
                 padding:0;
                 border-bottom: 1px solid #ddd;
@@ -230,10 +239,7 @@
   
       }
       &_right{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        z-index: 100;
+        @include headerright;
         &_list{
           display: flex;
           justify-content: space-between;
@@ -254,17 +260,7 @@
                 color: #6A6E71;
               }
               &_list{
-                display: none;
-                position: absolute;
-                width: 180px;
-                z-index: 11;
-                border: 1px solid #ddd;
-                border-radius: 3px;
-                background: #fff;
-                right: -10px;
-                padding: 16px;
-                margin-bottom: 0;
-                box-shadow: 0 0.5em 1em rgba(0,0,0,.15);
+                @include headerlist;
                 &_edit{
                   padding:0;
                   border-bottom: 1px solid #ddd;
