@@ -41,7 +41,6 @@
         .content{:style => "background-image: url(#{tweet.image});"}
           = link_to asset_url("/tweets/#{tweet.id}", method: :get) do
             = image_tag "/tweets/#{tweet.id}", method: :get
-
           .mainname
             .mainname_left
               %h2 
