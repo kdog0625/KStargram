@@ -109,6 +109,15 @@
   font-size: 30px;
 }
 
+@mixin lists{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 18px;
+}
+
 /* PC用デザイン */
 @media screen and (min-width: 481px) {
 .header_bars{
@@ -184,12 +193,7 @@
         }
       }   
       &_lists{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0;
-        padding-left: 0;
-        font-size: 18px;
+        @include lists;
         &_items{
           margin-right: 25px;
           position: relative;
@@ -282,12 +286,7 @@
           }
         }   
         &_lists{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 0;
-          padding-left: 0;
-          font-size: 18px;
+          @include lists;
           &_items{
             margin-right: 25px;
             position: relative;
