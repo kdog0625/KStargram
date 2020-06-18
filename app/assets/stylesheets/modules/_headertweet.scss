@@ -194,7 +194,7 @@
       }   
       &_lists{
         @include lists;
-        li{
+        &_items{
           margin-right: 25px;
           position: relative;
             a{
@@ -287,7 +287,7 @@
         }   
         &_lists{
           @include lists;
-          li{
+          &_items{
             margin-right: 25px;
             position: relative;
               a{
