@@ -7,6 +7,7 @@ class Tweet < ApplicationRecord
   has_many :comments
   has_many :likes
   has_many :liked_users, through: :likes, source: :user
+  acts_as_taggable
   # has_many :temps
   
 
