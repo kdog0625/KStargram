@@ -5,7 +5,7 @@ class TweetsController < ApplicationController
     @tweet=Tweet.new
     tweet_like_count = Tweet.joins(:likes).group(:tweet_id).count
     tweet_liked_ids = Hash[tweet_like_count.sort_by{ |_, v| -v }].keys
-    @tweet_ranking= Tweet.where(id: tweet_liked_ids).limit(5)
+    @tweet_ranking= Tweet.where(id: tweet_liked_ids).limit(3)
   end
   
   def new
