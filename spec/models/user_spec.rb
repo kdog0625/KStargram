@@ -14,6 +14,12 @@ describe User do
       expect(user.errors[:email]).to include("can't be blank")
     end
 
+    it "UserIDがない場合は登録できないこと" do
+      user = build(:user, usernoid: nil)
+      user.valid?
+      expect(user.errors[:usernoid]).to include("can't be blank")
+    end
+
     it "passwordがない場合は登録できないこと" do
       user = build(:user, password: nil)
       user.valid?
@@ -31,6 +37,13 @@ describe User do
       another_user = build(:user, email: user.email)
       another_user.valid?
       expect(another_user.errors[:email]).to include("has already been taken")
+    end
+
+    it " 重複したUserIDが存在する場合は登録できないこと " do
+      user = create(:user)
+      another_user = build(:user, usernoid: user.usernoid)
+      another_user.valid?
+      expect(another_user.errors[:usernoid]).to include("has already been taken")
     end
   end
 end
