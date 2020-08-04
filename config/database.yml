@@ -15,7 +15,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password:
-  socket: /tmp/mysql.sock
+  host: db
+  # socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -50,7 +51,7 @@ test:
 production:
   # <<: *default
   adapter: postgresql
-  encoding: unicode 
+  encoding: unicode
   database: KStargram_production
   username: KStargram
   password: <%= ENV['KSTARGRAM_DATABASE_PASSWORD'] %>
