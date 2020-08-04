@@ -1,3 +1,4 @@
+FROM ruby:2.5.1
 # using japanese on rails console
 ENV LANG C.UTF-8
 # remove debconf warning. debconf is a configuration system for Debian packages.
