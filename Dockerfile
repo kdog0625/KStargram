@@ -4,5 +4,5 @@ RUN apt-get update && apt-get install -y \
     nodejs
 WORKDIR /KStargram
 COPY Gemfile Gemfile.lock /KStargram/
-RUN gem install bundler && bundle install 
 COPY . /KStargram
+RUN gem install bundler && bundle install 
