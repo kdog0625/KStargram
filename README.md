@@ -49,6 +49,24 @@ KStargramは普段着る服や気温によってどのような服装をする�
 
 オススメのファッションコーディネートをトップページに表示しています。
 
+# 使用技術
+## フロントエンド
+・HTML/CSS
+・Haml
+・Scss
+・jQuery
+
+## バックエンド
+・Ruby 2.5.8
+・Ruby on Rails 5.2.4.3
+・MySQL 5.6.47
+
+## インフラ・環境構築等
+・Git/GitHub
+・Docker/docker-compose
+・AWS(S3)
+・Heroku
+
 # KStargram DB設計
 ## usersテーブル
 |Column|Type|Options|
