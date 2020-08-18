@@ -4,7 +4,16 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/ruby:2.5.8-node-browsers
-      - image: circleci/postgres
+        environment:
+          BUNDLER_VERSION: 2.1.4
+      - image: circleci/mysql:5.6
+        environment:
+          - MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+          - MYSQL_ROOT_HOST: '127.0.0.1'
+        environment:
+          POSTGRES_USER: postgres
+          PGHOST: 127.0.0.1
+          RAILS_ENV: test
 
     working_directory: ~/KStargram
 
@@ -19,23 +28,28 @@ jobs:
             - v1-dependencies-
 
       - run:
-          name: install dependencies
-          command: |
-            gem update --system
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+        name: install dependencies
+        command: |
+          gem install bundler -v 2.1.4
+          bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
+      - run: mv ./config/database.yml.ci ./config/database.yml
+      
       # Database setup
-      - run: bundle exec rake db:create
-      - run: bundle exec rake db:schema:load
+      - run:
+        name: Databasesetup
+        command: |
+          bundle exec rake db:create
+          bundle exec rake db:schema:load
 
       # run tests!
       - run:
-          name: run tests
+          name: Run rspec
           command: |
             mkdir /tmp/test-results
             TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | \
