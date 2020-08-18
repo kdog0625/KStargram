@@ -20,6 +20,3 @@ services:
     privileged: true
     tty: true
     stdin_open: true
-volumes:
-  bundle_install:
-    driver: local
