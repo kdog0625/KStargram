@@ -55,9 +55,9 @@ gem 'pry-byebug', group: :development
 # gem 'sqlite3', group: [:development, :test]
 
 # gem 'sqlite3', group: [:development, :test]
-group :production do
-  gem 'pg'
-end 
+# group :production do
+#   gem 'pg'
+# end 
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
