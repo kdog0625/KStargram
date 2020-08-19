@@ -49,6 +49,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+  <<: *default
+    database: KStargram_production
+    username: root
+    password: <%= ENV['DATABASE_PASSWORD'] %>
+    socket: /var/lib/mysql/mysql.sock
   # <<: *default
   # adapter: postgresql
   # encoding: unicode
@@ -56,9 +61,5 @@ production:
   # username: KStargram
   # password: <%= ENV['KSTARGRAM_DATABASE_PASSWORD'] %>
   # pool: 5
-  production:
-    <<: *default
-    database: KStargram_production
-    username: root
-    password: <%= ENV['DATABASE_PASSWORD'] %>
-    socket: /var/lib/mysql/mysql.sock
+  # production:
+    
