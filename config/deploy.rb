@@ -5,6 +5,8 @@ lock '3.14.1'
 # Capistranoのログの表示に利用する
 set :application, 'KStargram'
 
+set :deploy_to, "/var/www/rails/KStargram"
+
 # どのリポジトリからアプリをpullするかを指定する
 set :repo_url,  'git@github.com:kdog0625/KStargram.git'
 
