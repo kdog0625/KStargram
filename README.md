@@ -65,6 +65,7 @@ KStargramは普段着る服や気温によってどのような服装をする�
 ・Git/GitHub
 ・Docker/docker-compose
 ・AWS(EC2・S3)
+・rspec
 
 # KStargram DB設計
 ## usersテーブル
