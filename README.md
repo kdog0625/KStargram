@@ -64,8 +64,7 @@ KStargramは普段着る服や気温によってどのような服装をする�
 ## インフラ・環境構築等
 ・Git/GitHub
 ・Docker/docker-compose
-・AWS(S3)
-・Heroku
+・AWS(EC2・S3)
 
 # KStargram DB設計
 ## usersテーブル
