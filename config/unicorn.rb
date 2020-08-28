@@ -7,9 +7,10 @@ working_directory "#{app_path}/current"
 
 # それぞれ、sharedの中を参照するよう変更
 
-pid "#{app_path}/shared/tmp/pids/unicorn.pid"
+
 
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
+pid "#{app_path}/shared/tmp/pids/unicorn.pid"
 
 stderr_path "#{app_path}/shared/log/unicorn.stderr.log"
 
