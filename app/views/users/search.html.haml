@@ -17,11 +17,14 @@
     .contentaasas
       %table
         %tr.kusowaro
+          %th ユーザID
           %th ユーザ名
           %th 性別
           %th 登録日
         - @user.each do |user|
-          %tr.ssala
+          %tr
+            %td 
+              %a{:href => "/users/#{user.id}"}= user.usernoid
             %td 
               %a{:href => "/users/#{user.id}"}= user.name
             %td 

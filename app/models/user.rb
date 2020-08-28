@@ -39,7 +39,7 @@ class User < ApplicationRecord
 
         def self.search(search)
           if search
-            User.where('name LIKE(?) or sex LIKE(?) ',  "%#{search}%","%#{search}%")
+            User.where('name LIKE(?) or usernoid LIKE(?) or sex LIKE(?) ',  "%#{search}%","%#{search}%","%#{search}%")
           else
             User.all
           end
