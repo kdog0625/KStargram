@@ -1,11 +1,9 @@
-RAILS_ROOT = File.expand_path('../../', __FILE__)
-ENV['BUNDLE_GEMFILE'] = RAILS_ROOT + "/Gemfile"
+app_path = File.expand_path('../../../', __FILE__)
 
 
 worker_processes 1
 # currentを指定
-# working_directory "#{app_path}/current"
-working_directory "#{app_path}"
+working_directory "#{app_path}/current"
 
 # それぞれ、sharedの中を参照するよう変更
 
