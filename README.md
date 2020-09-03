@@ -51,21 +51,24 @@ KStargramは普段着る服や気温によってどのような服装をする�
 
 # 使用技術
 ## フロントエンド
-・HTML/CSS
-・Haml
-・Scss
-・jQuery
+・HTML/CSS  
+・Haml  
+・Scss  
+・jQuery  
 
 ## バックエンド
-・Ruby 2.5.8
-・Ruby on Rails 5.2.4.3
-・MySQL 5.6.47
+・Ruby 2.5.8  
+・Ruby on Rails 5.2.4.3  
+・MySQL 5.6.47  
 
 ## インフラ・環境構築等
-・Git/GitHub
-・Docker/docker-compose
-・AWS(EC2・S3)
-・rspec
+・Git/GitHub  
+・Docker/docker-compose  
+・AWS(EC2・S3)  
+・rspec  
+
+## その他
+・Capistrano  
 
 # KStargram DB設計
 ## usersテーブル
