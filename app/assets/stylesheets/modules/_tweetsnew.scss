@@ -338,6 +338,34 @@
           }
         }
         }  
+
+        .new_formtag{
+          margin: 0 auto;
+          width: 80%;
+          display: flex;
+          label{
+            float: left;
+            width: 210px;
+            text-align: center;
+            margin-bottom:20px;
+          }
+          #tweet_tag_list{
+            position: relative;
+            display: block;
+            top: -4px;
+            width: 180px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 4px;
+            font-size: 13px;
+            border: 1px #ddd solid;
+            padding: 2px 8px 2px 8px;
+            min-height: 30px;
+            outline: none;
+            margin-bottom:20px;
+          }
+        }
+
         .newtextfield{
          
           &_main{

@@ -52,6 +52,9 @@
       .tweettypestyle
         体質:
         =@tweet.typestyle 
+      .tweettags
+        タグ:
+        =@tweet.tag_list
       %h3.liketweet
         いいね: #{@tweet.likes.count}
         - if user_signed_in?
